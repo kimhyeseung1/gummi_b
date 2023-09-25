@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://gummi.vercel.app/
+
+# Sitemaps
+Sitemap: https://gummi.vercel.app/sitemap.xml

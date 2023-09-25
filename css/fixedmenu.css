@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+.fixedmenu {
+  position: fixed;
+  z-index: 999999999;
+  bottom: 450px;
+  right: 0px;
+  background-color: #fff;
+  padding: 10px 0 15px 0;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 1px 2px 4px #a8a8a8;
+}
+.fixedmenu > ul {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.fixedmenu > ul > li:first-child {
+  margin-bottom: 0px;
+}
+.fixedmenu > ul > li {
+  padding: 15px 20px;
+}
+.fixedmenu > ul > li > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.fixedmenu > ul > li > a > img {
+  width: 35px;
+  margin-bottom: 15px;
+}
+.fixedmenu > ul > li > a > span {
+  display: inline-block;
+}
+/* 탑 버튼 */
+.top-button{
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  width: auto;
+}
+.top-btn{
+  width: 55px;
+  display: block;
+  background-color: #ae85c9;
+  border-radius: 50%;
+  line-height: 55px;
+  text-align: center;
+}
+.top-btn img{
+  transform: rotate(180deg);
+}
+.top-btn img.up{
+  transform: rotate(0deg);
+}
+@media all and (max-width: 1680px){
+  .fixedmenu {
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    padding: 0;
+    box-shadow: none;
+    border-top: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 0;
+  }
+  .fixedmenu > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .fixedmenu > ul > li:first-child {
+    margin-bottom: 0px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+  .fixedmenu > ul > li {
+    width: 50%;
+    height: 65px;
+    padding: 15px 20px;
+    border-radius: 0%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  .fixedmenu > ul > li > a {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .fixedmenu > ul > li > a > img {
+    width: 30px;
+    margin-bottom: 8px;
+  }
+  .top-button{
+    right: 20px;
+    bottom: 100px;
+  }
+}
+@media all and (max-width: 1280px){
+  
+}
+@media all and (max-width: 1024px){
+  
+}
+@media all and (max-width: 760px){
+  
+}
+@media all and (max-width: 480px){
+  .fixedmenu > ul > li > a {
+    width: 100%;
+  }
+}
+@media all and (max-width: 320px){
+  
+}
