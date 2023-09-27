@@ -14,6 +14,7 @@
     background-color: #7EC19D;
     /* display: flex; */
     border-radius: 10px;
+
 }
 .banner_wrap > a {
     /* display: block; */
@@ -26,13 +27,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5% 0;
+    /* padding: 5% 0; */
 }
 .banner_img{
-    width: 35%;
-    height: 100%;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    width: 29%;
+    /* height: 100%; */
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
     padding-right: 5%;
 }
 .banner_img img{
@@ -40,7 +41,7 @@
     /* display: block; */
 }
 .banner_txt {
-    font-size: 4.5vw;
+    font-size: 2.5vw;
     font-weight: 700;
     color: #fff;
     width: 100%;
