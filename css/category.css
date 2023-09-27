@@ -1,5 +1,5 @@
 .category{
-  padding: 70px 0;
+  padding: 50px 0;
 }
 .category .inner {
   margin: 0 auto;
@@ -21,27 +21,29 @@
 }
 #cate_list1,
 #cate_list2 {
-  width: 80%;
+  width: 100%;
   /* width: 100%; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .cate_iist {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   /* gap: 10; */
   /* padding: 0 5%; */
   cursor: pointer;
 }
 .cate_iist > img {
-  width: 50%;
-  height: 50%;
+  width: 25%;
+  height: 25%;
   /* min-width: 60px;
   height: 60px; */
 }
 .cate_iist > span {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   padding-top: 15px;
   text-align: center;
@@ -50,12 +52,12 @@
 
 @media screen and (max-width: 1280px) {
   .category{
-    padding: 10% 0;
+    padding: 5% 2%;
   }
 }
 @media screen and (max-width: 760px) {
   .category{
-    padding: 8% 0;
+    padding: 8% 2%;
   }
 }
   .category .inner {
@@ -76,7 +78,7 @@
 
 @media screen and (max-width: 600px) {
   .category{
-    padding: 6% 0;
+    padding: 6% 2%;
   }
   .cate_iist {
     width: 100%;
@@ -94,7 +96,7 @@
 }
 @media screen and (max-width: 480px){
   .category{
-    padding: 4% 0;
+    padding: 4% 2%;
   }
   .cate_iist {
     width: 100%;
@@ -116,7 +118,7 @@
 }
 @media screen and (max-width: 430px){
   .category .inner{
-    padding: 40px 0;
+    padding:4% 2%;
   }
   .cate_iist {
     /* width: 100%; */
@@ -130,7 +132,7 @@
 }
 @media screen and (max-width: 320px){
   .category{
-    padding: 2% 0;
+    padding: 3% 2%;
   }
   .cate_iist {
     /* width: 100%;
