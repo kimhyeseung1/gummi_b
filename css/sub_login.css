@@ -203,9 +203,9 @@
 .tab_cont.account2 .teacher_text_content {
   display: block;
 }
-.tab_cont.account2 .login_sns {
+/* .tab_cont.account2 .login_sns {
   display: none;
-}
+} */
 .tab_cont.account1,
 .tab_cont.account2 {
   display: flex;

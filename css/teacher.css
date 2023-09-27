@@ -1,11 +1,11 @@
 .teacher{
-  padding: 70px 0;
+  padding: 50px 0;
 }
 .teacher .inner {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 .teacher h2 {
   position: relative;
@@ -49,7 +49,12 @@
 .teacher_info p {
   font-size: 16px;
   padding: 10px 0;
-  text-align: center;
+  text-align: left;
+}
+.teacher_info > span{
+  display: block;
+  text-align: left ;
+  color: #979a9c;
 }
 .teacher_info p b {
   font-size: 18px;
@@ -58,6 +63,7 @@
 .teacher_btn {
   text-align: center;
   margin-top: 10px;
+  width: 100%;
 }
 .teacher_btn button {
   background-color: #fff;
@@ -66,6 +72,7 @@
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
+  width: 100%;
 }
 .teacher_btn > button:hover {
   background-color: #ae85c9;
