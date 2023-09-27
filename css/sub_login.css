@@ -81,6 +81,10 @@
 	border-radius: 10px;
 	font-size: 15px;
 	font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 #btnLogin a {
     color: #ffff;
