@@ -1,9 +1,63 @@
 .banner01{
-    padding: 70px 0;
+    width: 100%;
+    /* height: 200px; */
+    font-family: "GangwonState";
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.banner01 .inner{
-    margin: 0 auto;
+.banner01 .inner {
     width: 100%;
     height: 100%;
-    /* padding: 20px; */
+}
+.banner_wrap{
+    width: 100%;
+    background-color: #7EC19D;
+    /* display: flex; */
+    border-radius: 10px;
+}
+.banner_wrap > a {
+    /* display: block; */
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+}
+.banner_txt{
+    width:65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+}
+.banner_img{
+    width: 35%;
+    height: 100%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 5%;
+}
+.banner_img img{
+    width: 100%;
+    /* display: block; */
+}
+.banner_txt {
+    font-size: 4.5vw;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    /* height: 100%; */
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.banner_txt >  i{
+    font-size: 3vw;
+    padding-left: 30px;
+    color: #fff;
+}
+
+@media all and (max-width: 1200px) {
+    .banner_txt  {
+        font-size: 4.4vw
+    }
 }
