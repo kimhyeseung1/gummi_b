@@ -2,6 +2,22 @@ $(function(){
     $('.fixedmenu > ul > li > .podocheck').on("click",function(e){
         e.preventDefault();
     });
+    $(".fixedmenu01").on("mouseenter", function() {
+        $(".fixedmenu_grape").fadeOut(0);
+        $(".color_fixed_grape").fadeIn(150);
+    });
+    $(".fixedmenu01").on("mouseleave", function() {
+        $(".fixedmenu_grape").fadeIn(150);
+        $(".color_fixed_grape").fadeOut(0);
+    });
+    $(".fixedmenu02").on("mouseenter", function() {
+        $(".fixedmenu_check").fadeOut(0);
+        $(".color_fixed_check").fadeIn(150);
+    });
+    $(".fixedmenu02").on("mouseleave", function() {
+        $(".fixedmenu_check").fadeIn(150);
+        $(".color_fixed_check").fadeOut(0);
+    });
 });
 window.addEventListener("load", function () {
     // top 버튼 스크롤 기능

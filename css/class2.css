@@ -1,11 +1,11 @@
 @charset "utf-8";
 .class {
-    padding-top: 70px;
+    padding-top: 50px;
     /* background-color: #d1c3ff52; */
 }
 .class2-1 {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     /* background-color: #d1c3ff52; */
 }
 .myclassheart {
@@ -53,6 +53,16 @@
     padding-bottom: 20px;
     letter-spacing: 1px;
     padding-top: 20px;
+    
+}
+.classopen{
+    color: #747474;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 500;
+    position: absolute;
+    right: 83px;
+    top: 21px;
     cursor: pointer;
 }
 .myclass2-1{
@@ -74,7 +84,7 @@ width: 100%;
 .myclass2-2 h4 {
     color: #ababab;
     font-size: 12px;
-    line-height: 0.875rem;
+    line-height: 1.125rem;
     font-weight: 400;
     text-align: left;
 }
@@ -90,7 +100,7 @@ width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+
 }
 
 .myclassstar {
@@ -120,13 +130,14 @@ width: 100%;
   }
 .myclass2-1 img{
   filter:brightness(92%);
+  cursor: pointer;
 }
 .myclass2-1 img:hover{
-  filter: brightness(1.1);
+    filter: brightness(1.03);
 }
   .class .swiper-slide img:hover{
     width: 100%;
-    filter: brightness(1.1);
+    filter: brightness(1.03);
 }
 
 .podo22 {
@@ -545,7 +556,7 @@ width: 100%;
 
 .class2 {
     background-color: #f7f7f7;
-    padding: 70px 0;
+    padding: 50px 0;
     padding-bottom: 41px;
 }
 .col2 {
@@ -743,6 +754,9 @@ width: 100%;
     .box_content p{
         line-height: 1.2;
        }
+       .class2-1 {
+        padding-top: 10px;
+       }
 }
 
 @media screen and (max-width: 720px) {
@@ -804,13 +818,18 @@ width: 100%;
     .box_content p{
      line-height: 1.2;
     }
+    .class2-1 {
+        padding-top: 10px;
+       }
 }
 @media (max-width: 390px){
 .th1, .th2, .td2, .td3 {
     font-size: 11px;
     font-weight: bold;
 }
- 
+.class2-1 {
+    padding-top: 10px;
+   }
 }
 @media screen and (max-width: 320px) {
     .qna-item .question {
@@ -839,5 +858,8 @@ width: 100%;
     }
     .box_content p{
         line-height: 1.2;
+       }
+       .class2-1 {
+        padding-top: 10px;
        }
 }
