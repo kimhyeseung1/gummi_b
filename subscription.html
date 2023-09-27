@@ -75,10 +75,10 @@
         <div class="overlay" id="overlay"></div>
         <!-- 수강신청 확인 팝업 -->
         <div id="confirmationPopup" class="popup">
-            <p>수강신청이 되었습니다.</p>
+            <p>수강신청이 완료되었습니다.</p>
             <a href="index.html"><button id="closeButton">닫기</button></a>
         </div>
-        <!-- 헤더 -->
+        <!-- header부분 -->
         <header class="header">
             <div class="inner">
                 <h1 class="h_logo">
@@ -147,8 +147,8 @@
                     <div class="mb_nav_gnb">
                         <div class="mb_nav_top">
                             <ul class="mb_login">
-                                <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
-                                <li><a href="login.html">로그인&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><i class="fa-regular fa-user"></i></li>
+                                <li><a href="login.html">로그인&ensp;</a>|<a href="signup.html">&ensp;회원가입&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
                             </ul>
                             <a href="#"><i class="fa-solid fa-xmark"></i></a>
                         </div>
@@ -310,11 +310,10 @@
                             향을 매개로 지친 일상 또는 마음에 편안함을 주는역할을 했으면 합니다.</p>
 
                         <h3 type="button" class="collapsible" onclick="collapse(this);"> 경력</h3>
-                        <p class="content">2013년 : 국내 최초 조향 학원 초급, 고급반 이수 (천연향료, 인공향료)
-                        <br>2013 - 2014년 : 아쿠아 디 파르마(ACQUA DI PARMA) 매장에서 아르바이트
-                        <br>2014 - 2016년 : DIY업계가 성정하던 시기에 DIY재료 업계에 도매, 소매로 유명한 회사에 근무
-                        <br>2016 - 2022년 : 천연 향료로만 룸프스레이를 제작하고 판매하는 회사에서 근무
-                        <br>2019 - 2022년 : 그린 창작소에서 ‘천연 향기 만들기’ 수업 진행</br><p></p>
+                        <p class="content"><strong>2013년</strong> : 국내 최초 조향 학원 초급, 고급반 이수 (천연향료, 인공향료)
+                        <br><strong>2013 - 2014년</strong> : 아쿠아 디 파르마(ACQUA DI PARMA) 매장 근무
+                        <br><strong>2016 - 2022년</strong> : 천연 향료로만 룸프스레이를 제작하고 판매하는 회사에서 근무
+                        <br><strong>2019 - 2022년</strong> : 그린 창작소에서 ‘천연 향기 만들기’ 수업 진행</br><p></p>
                         
                         <h3 type="button" class="collapsible" onclick="collapse(this);"> 카카오톡 ID</h3>
                         <p class="content"><i class="fa-solid fa-caret-right"></i> green_blaire_jin
@@ -336,9 +335,6 @@
                         <h3 type="button" class="collapsible" onclick="collapse(this);"> 장소</h3>
                         <p class="content">대구광역시 중구 중앙대로 394 제일빌딩 4F</p>
                         
-                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 방향성</h3>
-                        <p class="content">제 수업은 향기를 전혀 모르셔도 부담스럽지 않으실 거예요.<br>화장품이나 향수에서 느껴지는 인공향을 선호하지 않으시는 분들이 많이 찾아주시는 수업입니다.<br>부담가지실 필요 없이 향에 대한 표현력을 길러보고 싶으신 분에게도 도움이 될 거예요. <br>‘향’ 자체에 대한 흥미로움을 더해주고 즐거움을 찾아가는 시간입니다.</p>
-
                         <h3 type="button" class="collapsible" onclick="collapse(this);"> 인원</h3>
                         <p class="content">수업 가능한 최소 인원은 2인 이며, 최대 4명 까지 가능합니다. <br>
                             문의하기 -> 인원 모집 -> 수업 날짜를 정합니다.</p>
@@ -346,6 +342,7 @@
                         <h3 type="button" class="collapsible" onclick="collapse(this);"> 준비물</h3>
                         <p class="content">준비물은 따로 필요 없습니다.
                         <br> 편한 마음으로 오시면 되고 다른 분들과 함께 하는 수업이니 약속 시간만 지켜주시면 됩니다.</p>
+                        <p class="content"></p>
 
                         </div>
                 </div>
@@ -447,29 +444,44 @@
                 </div>
             </div>
         </footer>
-        <!-- 고정메뉴 -->
-        <div class="fixedmenu">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="images/fixedmenu_grape.png" alt="포도 보유 현황">
-                        <span>포도 보유 현황</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/fixedmenu_check.png" alt="신청하기">
-                        <span>신청하기</span>
-                    </a>
-                </li>
-            </ul>
+    </div>
+    <div class="modal-podo">
+        <div class="modal-main">  
+            <h3>포도 보유 현황</h3>
+            <div class="modal-txt">
+                <img src="images/podomodal.png" alt="">
+                <div class="modal-txt2">
+                포도 개수: 2개<br />
+                잔여 포인트: 1000점
+                </div>
+            </div>
+            <p>당신의 Gummi 활동을 응원합니다!</p>
+            <button class="modal-close">닫기</button>
         </div>
-        <!-- 탑 버튼 -->
-        <div class="top-button">
-            <a href="#" class="top-btn" id="top-btn">
-                <img src="images/top-btn.png" alt="top-btn" id="top-btn-img"/>
-            </a>
-        </div>
+    </div>
+    <!-- 고정메뉴 -->
+    <div class="fixedmenu">
+        <ul>
+            <li>
+                <a href="#" class="podocheck">
+                    <img src="images/fixedmenu_grape.png" alt="포도 보유 현황">
+                    <span>포도 보유 현황</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="subscription.html">
+                    <img src="images/fixedmenu_check.png" alt="신청하기">
+                    <span>신청하기</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 탑 버튼 -->
+    <div class="top-button">
+        <a href="#" class="top-btn" id="top-btn">
+            <img src="images/top-btn.png" alt="top-btn" id="top-btn-img"/>
+        </a>
     </div>
 </body>
 
