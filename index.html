@@ -62,7 +62,8 @@
     <link rel="stylesheet" href="css/class2.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/common.css">   
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/podo.css">   
     <!--js  -->
     <script src="js/header.js"></script>
     <script src="js/visual.js"></script>
@@ -140,7 +141,7 @@
                     <ul class="login">
                         <li><a href="login.html">로그인</a></li>
                         <li>&ensp;|&ensp;</li>
-                        <li><a href="login.html">회원가입</a></li>
+                        <li><a href="signup.html">회원가입</a></li>
                     </ul>
                 </nav>
                 <nav class="mb_nav">
@@ -151,8 +152,8 @@
                     <div class="mb_nav_gnb">
                         <div class="mb_nav_top">
                             <ul class="mb_login">
-                                <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
-                                <li><a href="login.html">로그인&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><i class="fa-regular fa-user"></i></li>
+                                <li><a href="login.html">로그인&ensp;</a>|<a href="signup.html">&ensp;회원가입&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
                             </ul>
                             <a href="#"><i class="fa-solid fa-xmark"></i></a>
                         </div>
@@ -281,23 +282,21 @@
         <div class="main">
             <!-- 비주얼부분 -->
             <section class="visual">
-                <div class="inner">
-                    <div class="swiper visualswiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/visual_slider01.svg" alt="이미지 슬라이더">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/visual_slider02.svg" alt="이미지 슬라이더">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/visual_slider03.svg" alt="이미지 슬라이더">
-                            </div>
+                <div class="swiper visualswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/visual_slider01_text.svg" alt="이미지 슬라이더">
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide">
+                            <img src="images/visual_slider02.svg" alt="이미지 슬라이더">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/visual_slider03.svg" alt="이미지 슬라이더">
+                        </div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
             <!-- 카테고리 -->
@@ -781,156 +780,237 @@
                 </div>
             </section>
             <!-- 새로 오픈한 클래스 -->
-            <section class="newclass">
-                <div class="inner">
-                    <div class="mynewclass mynewclass1">
-                        <div class="classtop">
-                            <h2>새로 오픈한 클래스</h2>
-                            <div class="classbutton swiper-button-next"></div>
-                            <div class="classbutton swiper-button-prev"></div>
-                        </div>
-                        <div class="mynewclass2podo">
-                            <div class="swiper visualswiper3">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="mynewclass2-1">
-                                            <img src="images/living2.png" alt="">
-                                            <div class="mynewclass2-2">
-                                                <h3>
-                                                당신의 깨끗한 하루를 위한 시크릿 비법
-                                                </h3>
-                                                <h4>리빙 | 김리빙</h4>
+            <section class="class">
+              <div class="inner">
+                  <div class="myclass myclass1">
+                      <div class="classtop">
+                          <h2>새로 오픈한 클래스</h2>
+                          <div class="classbutton swiper-button-next"></div>
+                          <div class="classbutton swiper-button-prev"></div>
+                      </div>
+                      <div class="myclass2podo">
+                          <div class="swiper visualswiper3">
+                              <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                      <div class="myclass2-1">
+                                          <img src="images/living2.png" alt="">
+                                          <div class="myclassheart">
+                                            <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
+                                            </path></svg></button>
+                                          </div>
+                                          <div class="myclass2-2">
+                                              <h3>
+                                              당신의 깨끗한 하루를 위한 시크릿 비법
+                                              </h3>
+                                              <h4>리빙 | 김리빙</h4>
+                                              <div class="myclassstarlegend"><span role="img" rotate="0" class="easqaw70 css-wlmn2t e1yku2jn1"><svg aria-hidden="true" fill=" rgb(255, 212, 0)" focusable="false" height="12" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="12" class="css-7kp13n e1yku2jn0"><path d="M2.10519 10.0221C1.61624 9.42298 1.96322 8.51936 2.72749 8.40149L8.15 7.56516L11.1557 2.83004C11.5485 2.21126 12.4515 2.21126 12.8443 2.83003L15.85 7.56516L21.2725 8.40149C22.0368 8.51936 22.3838 9.42298 21.8948 10.0221L18.05 14.7331L19.2957 20.5611C19.4654 21.3548 18.6688 22.0093 17.9231 21.6889L12 19.1441L6.07692 21.6889C5.33123 22.0093 4.53461 21.3548 4.70426 20.5611L5.95 14.7331L2.10519 10.0221Z"></path></svg></span>3.8 <span class="myclassstar"></span><div> 1개의 평가
+                                                
+                                              </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="mynewclass2-1">
-                                            <img src="images/bis.png" alt="">
-                                            <div class="mynewclass2-2">
-                                                <h3>
-                                                    베이스 팔찌 만들기를 통한 나만의 팔찌만들기!
-                                                </h3>
-                                                <h4>DIY| 김팔찌</h4>
+                                          </div>
+                                      </div>
+                                      
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <div class="myclass2-1">
+                                          <img src="images/bis.png" alt="">
+                                          <div class="myclassheart">
+                                            <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
+                                            </path></svg></button>
+                                          </div>
+                                          <div class="myclass2-2">
+                                              <h3>
+                                                  베이스 팔찌 만들기를 통한 나만의 팔찌만들기!
+                                              </h3>
+                                              <h4>DIY| 김팔찌</h4>
+                                              <div class="myclassstarlegend"><span role="img" rotate="0" class="easqaw70 css-wlmn2t e1yku2jn1"><svg aria-hidden="true" fill=" rgb(255, 212, 0)" focusable="false" height="12" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="12" class="css-7kp13n e1yku2jn0"><path d="M2.10519 10.0221C1.61624 9.42298 1.96322 8.51936 2.72749 8.40149L8.15 7.56516L11.1557 2.83004C11.5485 2.21126 12.4515 2.21126 12.8443 2.83003L15.85 7.56516L21.2725 8.40149C22.0368 8.51936 22.3838 9.42298 21.8948 10.0221L18.05 14.7331L19.2957 20.5611C19.4654 21.3548 18.6688 22.0093 17.9231 21.6889L12 19.1441L6.07692 21.6889C5.33123 22.0093 4.53461 21.3548 4.70426 20.5611L5.95 14.7331L2.10519 10.0221Z"></path></svg></span>3.5<span class="myclassstar"></span><div> 2개의 평가
+                                                
+                                              </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">    
-                                        <div class="mynewclass2-1">
-                                            <img src="images/yoyoyoyo.png" alt="">
-                                            <div class="mynewclass2-2">
-                                                <h3>
-                                                    화사한 담음새, 한식의 새로운 재해석 - 초급편
-                                                </h3>
-                                                <h4>요리 | 장요리</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">    
+                                      <div class="myclass2-1">
+                                          <img src="images/yoyoyoyo.png" alt="">
+                                          <div class="myclassheart">
+                                            <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
+                                            </path></svg></button>
+                                          </div>
+                                          <div class="myclass2-2">
+                                              <h3>
+                                                  화사한 담음새, 한식의 새로운 재해석 - 초급편
+                                              </h3>
+                                              <h4>요리 | 장요리</h4>
+                                              <div class="myclassstarlegend"><span role="img" rotate="0" class="easqaw70 css-wlmn2t e1yku2jn1"><svg aria-hidden="true" fill=" rgb(255, 212, 0)" focusable="false" height="12" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="12" class="css-7kp13n e1yku2jn0"><path d="M2.10519 10.0221C1.61624 9.42298 1.96322 8.51936 2.72749 8.40149L8.15 7.56516L11.1557 2.83004C11.5485 2.21126 12.4515 2.21126 12.8443 2.83003L15.85 7.56516L21.2725 8.40149C22.0368 8.51936 22.3838 9.42298 21.8948 10.0221L18.05 14.7331L19.2957 20.5611C19.4654 21.3548 18.6688 22.0093 17.9231 21.6889L12 19.1441L6.07692 21.6889C5.33123 22.0093 4.53461 21.3548 4.70426 20.5611L5.95 14.7331L2.10519 10.0221Z"></path></svg></span>0.0 <span class="myclassstar"></span><div> 0개의 평가
+                                                
+                                              </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">   
-                                        <div class="mynewclass2-1">
-                                            <img src="images/itit.png" alt="">
-                                            <div class="mynewclass2-2">
-                                                <h3>
-                                                    'IT·프로그래밍 20년' 선생님의 IT 교육
-                                                </h3>
-                                                <h4>IT | 박프로</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">   
+                                      <div class="myclass2-1">
+                                          <img src="images/itit.png" alt="">
+                                          <div class="myclassheart">
+                                            <<svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
+                                            </path></svg></button>
+                                          </div>
+                                          <div class="myclass2-2">
+                                              <h3>
+                                                  'IT·프로그래밍 20년' 선생님의 IT 교육
+                                              </h3>
+                                              <h4>IT | 박프로</h4>
+                                              <div class="myclassstarlegend"><span role="img" rotate="0" class="easqaw70 css-wlmn2t e1yku2jn1"><svg aria-hidden="true" fill=" rgb(255, 212, 0)" focusable="false" height="12" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="12" class="css-7kp13n e1yku2jn0"><path d="M2.10519 10.0221C1.61624 9.42298 1.96322 8.51936 2.72749 8.40149L8.15 7.56516L11.1557 2.83004C11.5485 2.21126 12.4515 2.21126 12.8443 2.83003L15.85 7.56516L21.2725 8.40149C22.0368 8.51936 22.3838 9.42298 21.8948 10.0221L18.05 14.7331L19.2957 20.5611C19.4654 21.3548 18.6688 22.0093 17.9231 21.6889L12 19.1441L6.07692 21.6889C5.33123 22.0093 4.53461 21.3548 4.70426 20.5611L5.95 14.7331L2.10519 10.0221Z"></path></svg></span>4.2 <span class="myclassstar"></span><div> 1개의 평가
+                                                
+                                              </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">   
-                                        <div class="mynewclass2-1">
-                                            <img src="images/yori4 1.png" alt="">
-                                            <div class="mynewclass2-2">
-                                                <h3>
-                                                    입안 가득 계절을 음미하는 법, 상암동 삼층집의 봄과 여름의 맛
-                                                </h3>
-                                                <h4> 요리 | 상요리</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">   
+                                      <div class="myclass2-1">
+                                          <img src="images/yori4 1.png" alt="">
+                                          <div class="myclassheart">
+                                            <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
+                                            </path></svg></button>
+                                          </div>
+                                          <div class="myclass2-2">
+                                              <h3>
+                                                  입안 가득 계절을 음미하는 법, 상암동 삼층집의 봄과 여름의 맛
+                                              </h3>
+                                              <h4> 요리 | 상요리</h4>
+                                              <div class="myclassstarlegend"><span role="img" rotate="0" class="easqaw70 css-wlmn2t e1yku2jn1"><svg aria-hidden="true" fill=" rgb(255, 212, 0)" focusable="false" height="12" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="12" class="css-7kp13n e1yku2jn0"><path d="M2.10519 10.0221C1.61624 9.42298 1.96322 8.51936 2.72749 8.40149L8.15 7.56516L11.1557 2.83004C11.5485 2.21126 12.4515 2.21126 12.8443 2.83003L15.85 7.56516L21.2725 8.40149C22.0368 8.51936 22.3838 9.42298 21.8948 10.0221L18.05 14.7331L19.2957 20.5611C19.4654 21.3548 18.6688 22.0093 17.9231 21.6889L12 19.1441L6.07692 21.6889C5.33123 22.0093 4.53461 21.3548 4.70426 20.5611L5.95 14.7331L2.10519 10.0221Z"></path></svg></span>4.5 <span class="myclassstar"></span><div>1개의 평가
+                                                
+                                              </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
             <!-- 회원님을 위한 추천 클래스 -->
-            <section class=".mynewclass2-1">
-                <div class="inner">
-                    <div class="mynewclass mynewclass2">
-                        <div class="classtop">
-                            <h2>회원님을 위한 클래스</h2>
-                            <div class="classbutton swiper-button-next"></div>
-                            <div class="classbutton swiper-button-prev"></div>
-                        </div>
-                        <div class="mynewclass2podo">
-                            <div class="swiper visualswiper2">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="mynewclass2-1">
-                                            <img src="images/subscription_img_main 1.png" alt="">
-                                            <div class="mynewclass2-2">
-                                                <h3>
-                                                    향수 마스터되는법,
-                                                    김향기의 독학비법서
-                                                </h3>
-                                                <h4>향수 | 김향기</h4>
+            <section class="class2-1">
+              <div class="inner">
+                  <div class="myclass myclass2">
+                      <div class="classtop">
+                          <h2>회원님을 위한 클래스</h2>
+                          <div class="classbutton swiper-button-next"></div>
+                          <div class="classbutton swiper-button-prev"></div>
+                      </div>
+                      <div class="myclass2podo">
+                          <div class="swiper visualswiper4">
+                              <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                      <div class="myclass2-1">
+                                          <img src="images/subscription_img_main 1.png" alt="">
+                                          <div class="myclassheart">
+                                            <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
+                                            </path></svg></button>
+                                          </div>
+                                          <div class="myclass2-2">
+                                              <h3>
+                                                  향수 마스터되는법,
+                                                  김향기의 독학비법서
+                                              </h3>
+                                              <h4>향수 | 김향기</h4>
+                                                <div class="myclassstarlegend"><span role="img" rotate="0" class="easqaw70 css-wlmn2t e1yku2jn1"><svg aria-hidden="true" fill=" rgb(255, 212, 0)" focusable="false" height="12" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="12" class="css-7kp13n e1yku2jn0"><path d="M2.10519 10.0221C1.61624 9.42298 1.96322 8.51936 2.72749 8.40149L8.15 7.56516L11.1557 2.83004C11.5485 2.21126 12.4515 2.21126 12.8443 2.83003L15.85 7.56516L21.2725 8.40149C22.0368 8.51936 22.3838 9.42298 21.8948 10.0221L18.05 14.7331L19.2957 20.5611C19.4654 21.3548 18.6688 22.0093 17.9231 21.6889L12 19.1441L6.07692 21.6889C5.33123 22.0093 4.53461 21.3548 4.70426 20.5611L5.95 14.7331L2.10519 10.0221Z"></path></svg></span>5.0 <span class="myclassstar"></span><div> 29개의 평가
+                                                
+                                              </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="mynewclass2-1">
-                                            <img src="images/marimo.png" alt="">
-                                            <div class="mynewclass2-2">
-                                                <h3>
-                                                    동글동글 귀여운 마리모, 
-                                                    나만의 반려식물 
-                                                </h3>
-                                                <h4>마리모 | 이박사</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <div class="myclass2-1">
+                                          <img src="images/marimo.png" alt="">
+                                          <div class="myclassheart">
+                                            <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
+                                            </path></svg></button>
+                                          </div>
+                                          <div class="myclass2-2">
+                                              <h3>
+                                                  동글동글 귀여운 마리모, 
+                                                  나만의 반려식물 
+                                              </h3>
+                                              <h4>마리모 | 이박사</h4>
+                                                <div class="myclassstarlegend"><span role="img" rotate="0" class="easqaw70 css-wlmn2t e1yku2jn1"><svg aria-hidden="true" fill=" rgb(255, 212, 0)" focusable="false" height="12" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="12" class="css-7kp13n e1yku2jn0"><path d="M2.10519 10.0221C1.61624 9.42298 1.96322 8.51936 2.72749 8.40149L8.15 7.56516L11.1557 2.83004C11.5485 2.21126 12.4515 2.21126 12.8443 2.83003L15.85 7.56516L21.2725 8.40149C22.0368 8.51936 22.3838 9.42298 21.8948 10.0221L18.05 14.7331L19.2957 20.5611C19.4654 21.3548 18.6688 22.0093 17.9231 21.6889L12 19.1441L6.07692 21.6889C5.33123 22.0093 4.53461 21.3548 4.70426 20.5611L5.95 14.7331L2.10519 10.0221Z"></path></svg></span>4.5 <span class="myclassstar"></span><div> 12개의 평가
+                                                
+                                              </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">    
-                                        <div class="mynewclass2-1">
-                                            <img src="images/yori.png" alt="">
-                                            <div class="mynewclass2-2">
-                                                <h3>
-                                                    모던 한식의 새로운 발견
-                                                    초보자도 쉽게!
-                                                </h3>
-                                                <h4>요리 | 김요리</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">    
+                                      <div class="myclass2-1">
+                                          <img src="images/yori.png" alt="">
+                                          <div class="myclassheart">
+                                           <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
+                                            </path></svg></button>
+                                          </div>
+                                          <div class="myclass2-2">
+                                              <h3>
+                                                  모던 한식의 새로운 발견
+                                                  초보자도 쉽게!
+                                              </h3>
+                                              <h4>요리 | 김요리</h4>
+                                                <div class="myclassstarlegend"><span role="img" rotate="0" class="easqaw70 css-wlmn2t e1yku2jn1"><svg aria-hidden="true" fill=" rgb(255, 212, 0)" focusable="false" height="12" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="12" class="css-7kp13n e1yku2jn0"><path d="M2.10519 10.0221C1.61624 9.42298 1.96322 8.51936 2.72749 8.40149L8.15 7.56516L11.1557 2.83004C11.5485 2.21126 12.4515 2.21126 12.8443 2.83003L15.85 7.56516L21.2725 8.40149C22.0368 8.51936 22.3838 9.42298 21.8948 10.0221L18.05 14.7331L19.2957 20.5611C19.4654 21.3548 18.6688 22.0093 17.9231 21.6889L12 19.1441L6.07692 21.6889C5.33123 22.0093 4.53461 21.3548 4.70426 20.5611L5.95 14.7331L2.10519 10.0221Z"></path></svg></span>4.2 <span class="myclassstar"></span><div> 23개의 평가
+                                                
+                                              </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">    
-                                        <div class="mynewclass2-1">
-                                            <img src="images/kiho.png" alt="">
-                                            <div class="mynewclass2-2">
-                                                <h3>
-                                                    쉽고 재밌는 키오스크,
-                                                    키오스크의 새로운 발견
-                                                </h3>
-                                                <h4>키오스크 | 박키오</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">    
+                                      <div class="myclass2-1">
+                                          <img src="images/kiho.png" alt="">
+                                          <div class="myclassheart">
+                                            <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
+                                            </path></svg></button>
+                                          </div>
+                                          <div class="myclass2-2">
+                                              <h3>
+                                                  쉽고 재밌는 키오스크,
+                                                  키오스크의 새로운 발견
+                                              </h3>
+                                              <h4>키오스크 | 박키오</h4>
+                                              <div class="myclassstarlegend"><span role="img" rotate="0" class="easqaw70 css-wlmn2t e1yku2jn1"><svg aria-hidden="true" fill=" rgb(255, 212, 0)" focusable="false" height="12" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="12" class="css-7kp13n e1yku2jn0"><path d="M2.10519 10.0221C1.61624 9.42298 1.96322 8.51936 2.72749 8.40149L8.15 7.56516L11.1557 2.83004C11.5485 2.21126 12.4515 2.21126 12.8443 2.83003L15.85 7.56516L21.2725 8.40149C22.0368 8.51936 22.3838 9.42298 21.8948 10.0221L18.05 14.7331L19.2957 20.5611C19.4654 21.3548 18.6688 22.0093 17.9231 21.6889L12 19.1441L6.07692 21.6889C5.33123 22.0093 4.53461 21.3548 4.70426 20.5611L5.95 14.7331L2.10519 10.0221Z"></path></svg></span>5.0 <span class="myclassstar"></span><div> 50개의 평가
+                                                
+                                              </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">   
-                                        <div class="mynewclass2-1">
-                                            <img src="images/yoyori.png" alt="">
-                                            <div class="mynewclass2-2">
-                                                <h3>
-                                                    왕초보에서 선생님으로!
-                                                    내가 만든 쿠키
-                                                </h3>
-                                                <h4>쿠킹 | 김왕자</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">   
+                                      <div class="myclass2-1">
+                                          <img src="images/yoyori.png" alt="">
+                                          <div class="myclassheart">
+                                           <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
+                                            </path></svg></button>
+                                          </div>
+                                          <div class="myclass2-2">
+                                              <h3>
+                                                  왕초보에서 선생님으로!
+                                                  내가 만든 쿠키
+                                              </h3>
+                                              <h4>쿠킹 | 김왕자</h4>
+                                                <div class="myclassstarlegend"><span role="img" rotate="0" class="easqaw70 css-wlmn2t e1yku2jn1"><svg aria-hidden="true" fill=" rgb(255, 212, 0)" focusable="false" height="12" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="12" class="css-7kp13n e1yku2jn0"><path d="M2.10519 10.0221C1.61624 9.42298 1.96322 8.51936 2.72749 8.40149L8.15 7.56516L11.1557 2.83004C11.5485 2.21126 12.4515 2.21126 12.8443 2.83003L15.85 7.56516L21.2725 8.40149C22.0368 8.51936 22.3838 9.42298 21.8948 10.0221L18.05 14.7331L19.2957 20.5611C19.4654 21.3548 18.6688 22.0093 17.9231 21.6889L12 19.1441L6.07692 21.6889C5.33123 22.0093 4.53461 21.3548 4.70426 20.5611L5.95 14.7331L2.10519 10.0221Z"></path></svg></span>4.9 <span class="myclassstar"></span><div> 32개의 평가
+                                                
+                                              </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
             <!-- 자주 묻는 질문 및 게시판 -->
             <section class="class2">
                 <div class="inner">
@@ -1066,14 +1146,29 @@
             </div>
         </footer>
     </div>
+    <div class="modal-podo">
+        <div class="modal-main">  
+            <h3>포도 보유 현황</h3>
+            <div class="modal-txt">
+                <img src="images/podomodal.png" alt="">
+                <div class="modal-txt2">
+                포도 개수: 2개<br />
+                잔여 포인트: 1000점
+                </div>
+            </div>
+            <p>당신의 Gummi 활동을 응원합니다!</p>
+            <button class="modal-close">닫기</button>
+        </div>
+    </div>
     <!-- 고정메뉴 -->
     <div class="fixedmenu">
         <ul>
             <li>
-                <a href="#">
+                <a href="#" class="podocheck">
                     <img src="images/fixedmenu_grape.png" alt="포도 보유 현황">
                     <span>포도 보유 현황</span>
                 </a>
+                
             </li>
             <li>
                 <a href="subscription.html">

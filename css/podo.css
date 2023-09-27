@@ -1,0 +1,68 @@
+@charset "utf-8";
+.modal-podo{
+  position: fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index:99999;
+  display: none;
+ }
+ .modal-txt {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+ .modal-txt2 {
+  font-size: 18px;
+  margin-top: 17px;
+  line-height: 1.5;
+  margin-right: 21px;
+  font-weight: 600;
+}
+ .modal-txt img{
+  width: 50%;
+ }
+ .modal-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 329px;
+  height: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+ }
+ .modal-main h3{
+  font-size: 30px;
+  color:  #a068c5;
+ }
+ .modal-close{
+  position: absolute;
+  width:50px;
+  height: 30px;
+  right:10px;
+  bottom:10px;
+  background-color: #ae85c9;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+ }
+.fadeOut{
+   animation: fadeOut 0.3s forwards;
+  
+}
+@keyframes fadeOut{
+100%{
+  opacity: 0;
+}
+}

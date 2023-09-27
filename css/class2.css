@@ -1,15 +1,30 @@
 @charset "utf-8";
-.newclass {
+.class {
     padding-top: 70px;
     /* background-color: #d1c3ff52; */
 }
-.mynewclass2-1 {
+.class2-1 {
     padding-top: 70px;
     padding-bottom: 70px;
     /* background-color: #d1c3ff52; */
 }
-
-.mynewclass {
+.myclassheart {
+  position: absolute;
+  top: 10px; /* 원하는 상단 위치 조절 */
+  right: 10px; /* 원하는 오른쪽 위치 조절 */
+  width: 24px;
+  height: 24px;
+  fill: white;
+  opacity: 1;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+}
+.myclassheart:hover{
+  fill: #a47fbc;
+}
+.myclass {
     width: 100%;
     height: 100%;
     position: relative;
@@ -33,20 +48,21 @@
     padding: 20px 0px;
     color: #393939;
 }
-.mynewclass2podo {
+.myclass2podo {
     font-size: 30px;
     padding-bottom: 20px;
     letter-spacing: 1px;
     padding-top: 20px;
+    cursor: pointer;
 }
-.mynewclass2-1{
+.myclass2-1{
     width: 100%;
 }
-.mynewclass2-2 {
+.myclass2-2 {
     width: 100%;
     padding-top: 10px;
 }
-.mynewclass2-2 h3 {
+.myclass2-2 h3 {
     font-size: 15px;
     line-height: 20px;
     text-align: left;
@@ -55,7 +71,7 @@ white-space: nowrap;
 overflow: hidden;
 width: 100%;
 }
-.mynewclass2-2 h4 {
+.myclass2-2 h4 {
     color: #ababab;
     font-size: 12px;
     line-height: 0.875rem;
@@ -76,16 +92,41 @@ width: 100%;
     align-items: center;
     cursor: pointer;
 }
+
+.myclassstar {
+  display: inline-block;
+  margin: 0px 4px;
+  width: 1px;
+  border-left: 1px solid rgb(228, 229, 237);
+  height: 10px;
+}
+.myclassstarlegend{
+  margin-top: 4px;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(154, 155, 167);
+  font-size: 11px;
+  line-height: 1.2;
+  justify-content: flex-end;
+}
 .class .swiper-slide img {
     display: block;
     width:100%;
     height: 100%;
     object-fit: cover;
+    filter:brightness(88%);
   }
-
+.myclass2-1 img{
+  filter:brightness(92%);
+}
+.myclass2-1 img:hover{
+  filter: brightness(1.1);
+}
   .class .swiper-slide img:hover{
     width: 100%;
-    filter: brightness(1.2);
+    filter: brightness(1.1);
 }
 
 .podo22 {
@@ -97,12 +138,12 @@ width: 100%;
     font-size: 15px;
     color: #9a9ba7;
 }
-.mynewclass3 {
+.myclass3 {
     width: 50%;
     height: 500px;
     padding-left: 3%;
 }
-.mynewclass33 {
+.myclass33 {
     padding-right: 15px;
     width: 100%;
     margin: 0 auto;
@@ -113,50 +154,50 @@ width: 100%;
 #myclass322{
     font-size: 20px;
 }
-.mynewclass3-inner {
+.myclass3-inner {
     margin-bottom: 20px;
     background-size: cover;
     display: flex;
     justify-content: space-between;
 }
-.mynewclass33::-webkit-scrollbar {
+.myclass33::-webkit-scrollbar {
     width: 4px;
     height: 20px;
 }
-.mynewclass33::-webkit-scrollbar-thumb {
+.myclass33::-webkit-scrollbar-thumb {
     /* background: #ae85c9; */
     background: #cdccce;
     /* border: 2px solid #9b6a2f;  */
     border-radius: 12px 12px 12px 12px;
 }
-.mynewclass33::-webkit-scrollbar-thumb:hover {
+.myclass33::-webkit-scrollbar-thumb:hover {
     background-color: #a0a0a5;
 }
-.mynewclass33::-webkit-scrollbar-track {
+.myclass33::-webkit-scrollbar-track {
     background: #f7f7f7;
 }
-.mynewclass3-1 {
+.myclass3-1 {
     width: 30%;
 }
 
-.mynewclass3-1 img {
+.myclass3-1 img {
     width: 100%;
     cursor: pointer;
 }
-.mynewclass3-1 img:hover {
+.myclass3-1 img:hover {
     width: 100%;
     filter: brightness(1.2);
 }
-.mynewclass3-2 {
+.myclass3-2 {
     width: 100%;
     padding: 5px 0px;
     max-width: 125px;
 }
-.mynewclass3-1 h3 {
+.myclass3-1 h3 {
     font-size: 0.875rem;
     line-height: 20px;
 }
-.mynewclass3-2 h4 {
+.myclass3-2 h4 {
     color: #ababab;
     font-size: 0.6875rem;
     line-height: 0.875rem;
@@ -318,7 +359,7 @@ width: 100%;
 }
 /* 반응형 디자인 */
 @media all and (max-width: 1420px) {
-    .mynewclass3-1 h3 {
+    .myclass3-1 h3 {
         font-size: 0.875rem;
         line-height: 20px;
         display: block;
@@ -352,10 +393,10 @@ width: 100%;
 
 }
 @media all and (max-width: 760px) {
-    .mynewclass2-2 h3 {
+    .myclass2-2 h3 {
         font-size: 13px;
     }
-    .mynewclass2-2 h4 {
+    .myclass2-2 h4 {
         font-size: 11px;
       
     }
@@ -365,36 +406,36 @@ width: 100%;
     .podo33 {
         display: none;
     }
-    .mynewclass3 {
+    .myclass3 {
         width: 100%;
         border-right: none;
         height: auto;
     }
-    .mynewclass33 {
+    .myclass33 {
         height: 395px;
         overflow: auto;
     }
-    .mynewclass3-inner {
+    .myclass3-inner {
         display: flex;
         justify-content: space-between;
     }
-    .mynewclass3-1 {
+    .myclass3-1 {
         overflow: hidden;
     }
-    .mynewclass3-1 img {
+    .myclass3-1 img {
         width: 100%;
     }
-    .mynewclass3-2 h3 {
+    .myclass3-2 h3 {
         font-size: 14px;
     }
-    .mynewclass3-2 h4 {
+    .myclass3-2 h4 {
         font-size: 12px;
     }
-    .mynewclass3-2 {
+    .myclass3-2 {
         width: 100%;
         padding: 5px 0px;
     }
-    .mynewclass3-1 h3 {
+    .myclass3-1 h3 {
         font-size: 0.875rem;
         line-height: 20px;
         display: block;
