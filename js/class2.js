@@ -25,7 +25,6 @@ window.addEventListener("load", function () {
       window.location.href = "subscription.html";
   });
   // 스크롤할 내용의 DOM 요소
-  const content = document.querySelector(".content");
 
   var swiper111 = new Swiper(".visualswiper3", {
       autoplay: {
@@ -35,8 +34,8 @@ window.addEventListener("load", function () {
       slidesPerView: 5,
       spaceBetween: 40,
       navigation: {
-          prevEl: ".mynewclass1 .swiper-button-prev",
-          nextEl: ".mynewclass1 .swiper-button-next",
+          prevEl: ".myclass1 .swiper-button-prev",
+          nextEl: ".myclass1 .swiper-button-next",
       },
       breakpoints: {
         0: {
@@ -77,7 +76,7 @@ window.addEventListener("load", function () {
         },
       }
   });
-  var swiper444 = new Swiper(".visualswiper2", {
+  var swiper444 = new Swiper(".visualswiper4", {
       autoplay: {
           delay: 4000,
       },
@@ -85,8 +84,8 @@ window.addEventListener("load", function () {
       slidesPerView: 5,
       spaceBetween: 40,
       navigation: {
-          prevEl: ".mynewclass2 .swiper-button-prev",
-          nextEl: ".mynewclass2 .swiper-button-next",
+          prevEl: ".myclass2 .swiper-button-prev",
+          nextEl: ".myclass2 .swiper-button-next",
       },
       breakpoints: {
         0: {
@@ -166,4 +165,3 @@ $(function () {
   items.forEach((item) => item.addEventListener("click", toggleAccordion));
 });
 
-window.addEventListener("load", function () {});
