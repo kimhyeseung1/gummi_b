@@ -1,3 +1,8 @@
+$(function(){
+    $('.fixedmenu > ul > li > .podocheck').on("click",function(e){
+        e.preventDefault();
+    });
+});
 window.addEventListener("load", function () {
     // top 버튼 스크롤 기능
     const topBtn = document.getElementById("top-btn");

@@ -7,7 +7,7 @@ $(document).ready(function() {
   // panning slide stack and the position 'behind'
   // the stack, needed for correct animation style
 
-  var mySwiper = new Swiper(".swiper-container", {
+  var mySwiper = new Swiper(".popualclass .swiper-container", {
     spaceBetween: 1,
     slidesPerView: 1,
     centeredSlides: true,
@@ -19,8 +19,8 @@ $(document).ready(function() {
     loop: true,
     loopAdditionalSlides: 30,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".popualclass .swiper-button-next",
+      prevEl: ".popualclass .swiper-button-prev"
     },
     breakpoints: {
       320: {
