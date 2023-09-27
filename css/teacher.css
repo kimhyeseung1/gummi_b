@@ -34,6 +34,7 @@
 }
 .teacher_img > img{
   border-radius: 10px;
+  min-width: 150px;
 }
 .teacher_list .teacher_info {
   margin-top: 10px;
@@ -45,6 +46,7 @@
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 10px;
+  text-align: left;
 }
 .teacher_info p {
   font-size: 16px;
@@ -54,7 +56,7 @@
 .teacher_info > span{
   display: block;
   text-align: left ;
-  color: #979a9c;
+  color: #7b7b7b;
 }
 .teacher_info p b {
   font-size: 18px;
@@ -84,12 +86,32 @@
 
 
 /* 반응형 */
-
+@media all and (max-width: 1450px){
+  .teacher_list .teacher_info{
+    padding-left: 20px;
+  }
+}
+@media all and (max-width: 1320px){
+  .teacher_list .teacher_info{
+    padding-left: 25px;
+  }
+}
+@media all and (max-width: 1280px){
+  .teacher_list .teacher_info{
+    padding-left: 30px;
+  }
+}
 @media all and (max-width: 1230px) {
+  .teacher_list .teacher_info{
+    padding-left: 0;
+  }
   .teacher_wrap{
     display: flex;
     justify-content: space-between;
   } 
+  .teacher_info h3 {
+    text-align: center;
+  }
   .teacher_list {
       /* width: calc(100% - 120px); */
       padding: 3% 0;
@@ -104,6 +126,12 @@
   
   .teacher_info {
       font-size: 15px;
+  }
+  .teacher_info p {
+    text-align: center;
+  }
+  .teacher_info > span{
+    text-align: center ;
   }
 }
 @media all and (max-width: 780px) {

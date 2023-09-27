@@ -25,7 +25,8 @@
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WTNFFC6M');</script>
+    })(window,document,'script','dataLayer','GTM-KX9TG49M');</script>
+    <!-- End Google Tag Manager -->
     <!-- End Google Tag Manager -->
     <title>신청하기</title>
     <!-- fontawesome -->
@@ -57,6 +58,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/fixedmenu.css">
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/podo.css"> 
     <!--js  -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="js/header.js"></script>
@@ -68,22 +70,23 @@
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTNFFC6M"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX9TG49M"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="wrap">
         <!-- 모달 배경 어둡게 -->
         <div class="overlay" id="overlay"></div>
         <!-- 수강신청 확인 팝업 -->
-        <div id="confirmationPopup" class="popup">
-            <p>수강신청이 완료되었습니다.</p>
-            <a href="index.html"><button id="closeButton">닫기</button></a>
+        <div id="confirmationPopup" class="subscription_popup">
+            <p class="subscription_popup_txt">수강신청이 완료되었습니다.</p>
+            <a href="#"><button id="GoButton">수강신청 내역 보러가기   <i class="fa-solid fa-chevron-right" style="color: #ffffff;"> </i></button></a>
+            <a href="index.html"><button id="closeButton"><i class="fa-solid fa-xmark"></i></button></a>
         </div>
         <!-- header부분 -->
         <header class="header">
             <div class="inner">
                 <h1 class="h_logo">
-                    <a href="index.html"><img src="images/logo3.svg" alt="로고"></a>
+                    <a href="index2.html"><img src="images/logo3_text.svg" alt="로고"></a>
                 </h1>
                 <nav class="h_nav">
                     <ul class="searchbar">
@@ -135,9 +138,9 @@
                         </li>
                     </ul>
                     <ul class="login">
-                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="#"><span class="purple">햄승이</span>님</a></li>
                         <li>&ensp;|&ensp;</li>
-                        <li><a href="signup.html">회원가입</a></li>
+                        <li><a href="index.html">로그아웃</a></li>
                     </ul>
                 </nav>
                 <nav class="mb_nav">
@@ -149,7 +152,7 @@
                         <div class="mb_nav_top">
                             <ul class="mb_login">
                                 <li><i class="fa-regular fa-user"></i></li>
-                                <li><a href="login.html">로그인&ensp;</a>|<a href="signup.html">&ensp;회원가입&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a href="#"><span class="purple">햄승이</span>님&ensp;</a>|<a href="index.html">&ensp;로그아웃&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
                             </ul>
                             <a href="#"><i class="fa-solid fa-xmark"></i></a>
                         </div>
@@ -305,6 +308,16 @@
                         <p><span class="review_rating">5.0 </span><span class="review_total">리뷰 12건</span></p>
                     </div>
                     <div class="subscription_left_inner">
+                        <ul class="subscription_cate_list">
+                            <a href=""><li><h1>선생님 소개</h1></li></a>
+                            <a href=""><li><h1>경력</h1></li></a>
+                            <a href=""><li><h1>카카오톡 ID</h1></li></a>
+                            <a href=""><li><h1>수업에 사용되는 향료</h1></li></a>
+                            <a href=""><li><h1>수업 내용</h1></li></a>
+                            <a href=""><li><h1>장소</h1></li></a>
+                            <a href=""><li><h1>인원</h1></li></a>
+                            <a href=""><li><h1>준비물</h1></li></a>
+                        </ul>
                         <h3 type="button" class="collapsible" onclick="collapse(this);"> 선생님 소개</h3>
                         <p class="content">‘향기’가 인생 자체가 된 날을 선명하게 기억합니다. <br>
                             생활용품 중에도 필수품이 있듯이 향도 자연스럽게 사람들의 일상에 스며있었으면 좋겠어요. <br>
@@ -350,15 +363,14 @@
                 <!-- 오른쪽 섹션 -->
                 <div class="subscription_right">
                     <div class="subscription_right_wrap">
-                    <!-- 공유하기, 찜하기 아이콘 -->
-                    <div class="subscription_icon">
+                    <!-- 강좌 명 -->
+                    <div class="subscription_title">
+                        <h2>나의 이미지에 맞는 향수 만들기</h2>
+                        <div class="subscription_icon">
                         <i class="fa-solid fa-share-nodes" style="color: #303441"></i>
                         <!-- <i class="fa-regular fa-heart" style="color: #303441"><span> 24</span></i> -->
                         <i class="fa-solid fa-heart" style="color: #AE85C9;"><span> 24</span></i>
                     </div>
-                    <!-- 강좌 명 -->
-                    <div class="subscription_title">
-                        <h2>나의 이미지에 맞는 향수 만들기</h2>
                     </div>
                     <!-- 강좌 전체 박스 -->
                     <div class="subscription_box">

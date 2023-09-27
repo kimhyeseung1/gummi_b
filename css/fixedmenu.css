@@ -32,6 +32,9 @@
   width: 35px;
   margin-bottom: 15px;
 }
+.fixedmenu > ul > li > a > img:nth-child(2n) {
+  display: none;
+}
 .fixedmenu > ul > li > a > span {
   display: inline-block;
 }
