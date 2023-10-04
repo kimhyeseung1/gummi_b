@@ -34,7 +34,7 @@
 }
 .teacher_img > img{
   border-radius: 10px;
-  min-width: 150px;
+  /* min-width: 150px; */
 }
 .teacher_list .teacher_info {
   margin-top: 10px;
@@ -83,6 +83,7 @@
 .teacher_btn > button:hover span{
   color: #fff;
 }
+
 
 
 /* 반응형 */
