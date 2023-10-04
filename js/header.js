@@ -3,20 +3,32 @@ $(function () {
         $(".submenu").stop().slideDown(500);
         $(".header").addClass("on");
     });
-
+    
     $(".gnb > li").mouseout(function () {
         $(".submenu").stop().slideUp(100);
         $(".header").removeClass("on");
     });
-
+    
     $(".mb_gnb > li").mouseover(function () {
         $(this).find(".mb_submenu").stop().slideDown(500);
         $(this).find(".more").addClass("active");
     });
-
+    
     $(".mb_gnb > li").mouseout(function () {
         $(this).find(".mb_submenu").stop().slideUp(500);
         $(this).find(".more").removeClass("active");
+    });
+    
+    $('.mb_h_nav a').on("click",function(e){
+        e.preventDefault();
+    });
+
+    $('.mb_nav_top a').on("click",function(e){
+        e.preventDefault();
+    });
+
+    $('.mb_gnb a').on("click",function(e){
+        e.preventDefault();
     });
 });
 
