@@ -23,7 +23,7 @@ $(function () {
         e.preventDefault();
     });
 
-    $('.mb_nav_top a').on("click",function(e){
+    $('.mb_nav_top > a').on("click",function(e){
         e.preventDefault();
     });
 
