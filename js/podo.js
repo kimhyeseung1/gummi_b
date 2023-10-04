@@ -9,5 +9,3 @@ window.addEventListener("load", function () {
     modalWrap.style.display = "none";
   })
   })
-  
-  

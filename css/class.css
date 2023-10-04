@@ -230,7 +230,10 @@ td > br{
 .content {
     width: 100%;
     height: 450px;
-    animation: scrollAnimation 15s linear infinite;
+    /* animation: scrollAnimation 15s linear infinite; */
+}
+.content:hover{
+    animation-play-state: paused;
 }
 .content:hover{
     animation-play-state: paused;

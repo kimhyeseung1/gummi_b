@@ -41,20 +41,13 @@ window.addEventListener("load", function() {
         }
 
         var intro = $("#introduce").val()
-
         var agreement = $("#agreement:checked").length
-        if (!agreement) {
+        if(userID == "" || userName == "" || userGen == "" || userpw == "" || userpwcon == ""){
+            alert("빈칸을 입력해주세요!");
+        }else if (!agreement) {
             alert("약관에 동의하셔야 회원가입을 하실 수 있습니다.");
-        }else {
-            location.href = "login.html"
-
-        }
-        
-        var pwmask = "";
-        for (var i = 0; i < userpw.length; i++) {
-            pwmask += "*"
-        }
-        var joinInfo =
+        }else{
+            var joinInfo =
             "아이디 : " + userID + "\n" +
             "이름 : " + userName + "\n" +
             "성별 : " + userGen + "\n" +
@@ -62,10 +55,18 @@ window.addEventListener("load", function() {
             "메일주소 : " + mailFull + "\n" +
             "휴대전화 : " + phoneInfo + "\n" +
             "주소 : " + useraddr + "\n";
-        var con = confirm(joinInfo + "입력하신 정보가 맞습니까?");
-        if (con) {
-            alert("회원가입이 완료되었습니다.");
-            location.href = "login.html"
+            var con = confirm(joinInfo + "입력하신 정보가 맞습니까?");
+            if (con) {
+                alert("회원가입이 완료되었습니다.");
+                location.href = "login.html"
+            }
         }
+        
+        var pwmask = "";
+        for (var i = 0; i < userpw.length; i++) {
+            pwmask += "*"
+        }
+        
+        
     })
 })

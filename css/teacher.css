@@ -1,11 +1,11 @@
 .teacher{
-  padding: 70px 0;
+  padding: 50px 0;
 }
 .teacher .inner {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 .teacher h2 {
   position: relative;
@@ -34,6 +34,7 @@
 }
 .teacher_img > img{
   border-radius: 10px;
+  /* min-width: 150px; */
 }
 .teacher_list .teacher_info {
   margin-top: 10px;
@@ -45,11 +46,17 @@
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 10px;
+  text-align: left;
 }
 .teacher_info p {
   font-size: 16px;
   padding: 10px 0;
-  text-align: center;
+  text-align: left;
+}
+.teacher_info > span{
+  display: block;
+  text-align: left ;
+  color: #7b7b7b;
 }
 .teacher_info p b {
   font-size: 18px;
@@ -58,6 +65,7 @@
 .teacher_btn {
   text-align: center;
   margin-top: 10px;
+  width: 100%;
 }
 .teacher_btn button {
   background-color: #fff;
@@ -66,6 +74,7 @@
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
+  width: 100%;
 }
 .teacher_btn > button:hover {
   background-color: #ae85c9;
@@ -76,13 +85,34 @@
 }
 
 
-/* 반응형 */
 
+/* 반응형 */
+@media all and (max-width: 1450px){
+  .teacher_list .teacher_info{
+    padding-left: 20px;
+  }
+}
+@media all and (max-width: 1320px){
+  .teacher_list .teacher_info{
+    padding-left: 25px;
+  }
+}
+@media all and (max-width: 1280px){
+  .teacher_list .teacher_info{
+    padding-left: 30px;
+  }
+}
 @media all and (max-width: 1230px) {
+  .teacher_list .teacher_info{
+    padding-left: 0;
+  }
   .teacher_wrap{
     display: flex;
     justify-content: space-between;
   } 
+  .teacher_info h3 {
+    text-align: center;
+  }
   .teacher_list {
       /* width: calc(100% - 120px); */
       padding: 3% 0;
@@ -97,6 +127,12 @@
   
   .teacher_info {
       font-size: 15px;
+  }
+  .teacher_info p {
+    text-align: center;
+  }
+  .teacher_info > span{
+    text-align: center ;
   }
 }
 @media all and (max-width: 780px) {

@@ -5,21 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO적용 -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="description" content="나의 꿈이 이루어지는 공간 구미 Gummi!" />
-    <meta name="keywords" content="검색 키워드" />
-    <meta property="og:title" content="Gummi" />
-    <meta property="keyword" content="검색 키워드" />
-    <meta property="og:url" content="https://gummi.com/" />
-    <meta property="og:image" content="https://gummi.com/img/url_image.jpg" />
-    <meta property="og:description" content="나의 꿈이 이루어지는 공간 구미 Gummi!" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Gummi" />
-    <meta name="twitter:url" content="https://gummi.com/" />
-    <meta name="twitter:image" content="https://gummi.com/img/logo.png" />
-    <meta name="twitter:description" content="나의 꿈이 이루어지는 공간 구미 Gummi!" />
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="description" content="나의 꿈이 이루어지는 공간 구미 Gummi!"/>
+    <meta name="keywords" content="재능기부, 기부, 무료학습, 무료, 취약계층, 포도알"/>
+    <meta property="og:title" content="Gummi"/>
+    <meta property="keyword" content="재능기부, 기부, 무료학습, 무료, 취약계층, 포도알"/>
+    <meta property="og:url" content="https://gummi.com/"/>
+    <meta property="og:image" content="https://gummi.com/img/url_image.jpg"/>
+    <meta property="og:description" content="나의 꿈이 이루어지는 공간 구미 Gummi!"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Gummi"/>
+    <meta name="twitter:url" content="https://gummi.com/"/>
+    <meta name="twitter:image" content="https://gummi.com/img/logo.png"/>
+    <meta name="twitter:description" content="나의 꿈이 이루어지는 공간 구미 Gummi!"/>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -57,6 +57,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/fixedmenu.css">
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/podo.css"> 
     <!--js  -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="js/header.js"></script>
@@ -64,6 +65,8 @@
     <script src="js/footer.js"></script>
     <script src="js/fixedmenu.js"></script>
     <script src="js/podo.js"></script>
+    <!-- fivicon -->
+    <link rel="icon" href="images/fcon.png">
 </head>
 
 <body>
@@ -75,15 +78,17 @@
         <!-- 모달 배경 어둡게 -->
         <div class="overlay" id="overlay"></div>
         <!-- 수강신청 확인 팝업 -->
-        <div id="confirmationPopup" class="popup">
-            <p>수강신청이 완료되었습니다.</p>
-            <a href="index.html"><button id="closeButton">닫기</button></a>
+        <div id="confirmationPopup" class="subscription_popup">
+            <p class="subscription_popup_txt">수강신청이 완료되었습니다.</p>
+            <a href="#"><button id="GoButton1">수강신청 내역 보러가기 <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button></a>
+            <a href="#"><button id="GoButton2">수강신청 내역 <br> 보러가기 <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button></a>
+            <a href="index.html"><button id="closeButton"><i class="fa-solid fa-xmark"></i></button></a>
         </div>
         <!-- header부분 -->
         <header class="header">
             <div class="inner">
                 <h1 class="h_logo">
-                    <a href="index.html"><img src="images/logo3.svg" alt="로고"></a>
+                    <a href="index2.html"><img src="images/logo3_text.svg" alt="로고"></a>
                 </h1>
                 <nav class="h_nav">
                     <ul class="searchbar">
@@ -135,9 +140,9 @@
                         </li>
                     </ul>
                     <ul class="login">
-                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="#"><span class="purple">햄승이</span>님</a></li>
                         <li>&ensp;|&ensp;</li>
-                        <li><a href="signup.html">회원가입</a></li>
+                        <li><a href="index.html">로그아웃</a></li>
                     </ul>
                 </nav>
                 <nav class="mb_nav">
@@ -149,7 +154,7 @@
                         <div class="mb_nav_top">
                             <ul class="mb_login">
                                 <li><i class="fa-regular fa-user"></i></li>
-                                <li><a href="login.html">로그인&ensp;</a>|<a href="signup.html">&ensp;회원가입&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a href="#"><span class="purple">햄승이</span>님&ensp;</a>|<a href="index.html">&ensp;로그아웃&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
                             </ul>
                             <a href="#"><i class="fa-solid fa-xmark"></i></a>
                         </div>
@@ -305,26 +310,36 @@
                         <p><span class="review_rating">5.0 </span><span class="review_total">리뷰 12건</span></p>
                     </div>
                     <div class="subscription_left_inner">
+                        <!-- <ul class="subscription_cate_list">
+                            <a href="#cate_list_01"><li><h1>선생님 소개</h1></li></a>
+                            <a href="#cate_list_02"><li><h1>경력</h1></li></a>
+                            <a href="#cate_list_03"><li><h1>카카오톡 ID</h1></li></a>
+                            <a href="#cate_list_04"><li><h1>수업에 사용되는 향료</h1></li></a>
+                            <a href="#cate_list_05"><li><h1>수업 내용</h1></li></a>
+                            <a href="#cate_list_06"><li><h1>장소</h1></li></a>
+                            <a href="#cate_list_07"><li><h1>인원</h1></li></a>
+                            <a href="#cate_list_08"><li><h1>준비물</h1></li></a>
+                        </ul> -->
                         <h3 type="button" class="collapsible" onclick="collapse(this);"> 선생님 소개</h3>
                         <p class="content">‘향기’가 인생 자체가 된 날을 선명하게 기억합니다. <br>
                             생활용품 중에도 필수품이 있듯이 향도 자연스럽게 사람들의 일상에 스며있었으면 좋겠어요. <br>
                             향을 매개로 지친 일상 또는 마음에 편안함을 주는역할을 했으면 합니다.</p>
 
-                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 경력</h3>
+                        <h3 id="cate_list_02" type="button" class="collapsible" onclick="collapse(this);"> 경력</h3>
                         <p class="content"><strong>2013년</strong> : 국내 최초 조향 학원 초급, 고급반 이수 (천연향료, 인공향료)
                         <br><strong>2013 - 2014년</strong> : 아쿠아 디 파르마(ACQUA DI PARMA) 매장 근무
                         <br><strong>2016 - 2022년</strong> : 천연 향료로만 룸프스레이를 제작하고 판매하는 회사에서 근무
-                        <br><strong>2019 - 2022년</strong> : 그린 창작소에서 ‘천연 향기 만들기’ 수업 진행</br><p></p>
+                        <br><strong>2019 - 2022년</strong> : 그린 창작소에서 ‘천연 향기 만들기’ 수업 진행</br></p>
                         
-                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 카카오톡 ID</h3>
+                        <h3 id="cate_list_03" type="button" class="collapsible" onclick="collapse(this);"> 카카오톡 ID</h3>
                         <p class="content"><i class="fa-solid fa-caret-right"></i> green_blaire_jin
                         <br> 문의사항이 있으면 카카오톡으로 편하게 연락주세요!</p>
 
-                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 수업에 사용되는 향료</h3>
+                        <h3 id="cate_list_04" type="button" class="collapsible" onclick="collapse(this);"> 수업에 사용되는 향료</h3>
                         <p class="content">향료 10-20 가지 사용
                         <br> 스파이시, 발삼, 허브, 등 다양한 후드 향료</p>
 
-                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 수업 내용</h3>
+                        <h3 aria-colcount="cate_list_05" type="button" class="collapsible" onclick="collapse(this);"> 수업 내용</h3>
                         <p class="content"><i class="fa-solid fa-caret-right"></i> 천연 향과 인공 향의 차이점
                         <br><i class="fa-solid fa-caret-right"></i> 천연 향과 인공 향의 현재 방향성
                         <br><i class="fa-solid fa-caret-right"></i> 향기 훈련 방법
@@ -332,19 +347,11 @@
                         <br><i class="fa-solid fa-caret-right"></i> 에센셜 오일 향기 맡기
                         <br><i class="fa-solid fa-caret-right"></i> 에센셜 오일을 이용한 향기 만들기
                         <br><i class="fa-solid fa-caret-right"></i> 라벨링 작업</p>
-
-                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 장소</h3>
-                        <p class="content">대구광역시 중구 중앙대로 394 제일빌딩 4F</p>
                         
-                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 인원</h3>
+                        <h3 id="cate_list_07" type="button" class="collapsible" onclick="collapse(this);"> 인원</h3>
                         <p class="content">수업 가능한 최소 인원은 2인 이며, 최대 4명 까지 가능합니다. <br>
                             문의하기 -> 인원 모집 -> 수업 날짜를 정합니다.</p>
-
-                        <h3 type="button" class="collapsible" onclick="collapse(this);"> 준비물</h3>
-                        <p class="content">준비물은 따로 필요 없습니다.
-                        <br> 편한 마음으로 오시면 되고 다른 분들과 함께 하는 수업이니 약속 시간만 지켜주시면 됩니다.</p>
-                        <p class="content"></p>
-
+                            <p></p>
                         </div>
                 </div>
                 <!-- 오른쪽 섹션 -->
