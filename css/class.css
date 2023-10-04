@@ -139,7 +139,18 @@ td > br{
     font-size: 30px;
     color: #ae85c9;
 }
-
+/* @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-table {
+    animation: fadeIn 3s ease-in-out;
+  } */
 .podo33 {
     font-size: 15px;
     color: #9a9ba7;
@@ -158,7 +169,7 @@ td > br{
     padding-top: 20px;
 }
 #myclass322{
-    font-size: 20px;
+    font-size: 25px;
 }
 .myclass3-inner {
     margin-bottom: 20px;
@@ -220,6 +231,9 @@ td > br{
     width: 100%;
     height: 450px;
     /* animation: scrollAnimation 15s linear infinite; */
+}
+.content:hover{
+    animation-play-state: paused;
 }
 .content:hover{
     animation-play-state: paused;
@@ -888,7 +902,7 @@ td {
     padding-right: 3%;
 }
 .myclass4 h2{
-    font-size: 20px;
+    font-size: 25px;
 }
 #myclass33{
     font-size: 20px;
