@@ -60,13 +60,10 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/class2.css">
-    <link rel="stylesheet" href="css/header_main.css">
-    <link rel="stylesheet" href="css/class.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/common.css"> 
-    <link rel="stylesheet" href="css/podo.css"> 
-    <link rel="stylesheet" href="css/fixedmenu.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/podo.css">   
     <!--js  -->
     <script src="js/header.js"></script>
     <script src="js/visual.js"></script>
@@ -80,9 +77,6 @@
     <script src="js/footer.js"></script>
     <script src="js/fixedmenu.js"></script>
     <script src="js/podo2.js"></script>
-   <script src="js/podo.js"></script>
-   <!-- fivicon -->
-   <link rel="icon" href="images/fcon.png">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -94,7 +88,7 @@
         <header class="header">
             <div class="inner">
                 <h1 class="h_logo">
-                    <a href="index2.html"><img src="images/logo3_text.svg" alt="로고"></a>
+                    <a href="index.html"><img src="images/logo3.svg" alt="로고"></a>
                 </h1>
                 <nav class="h_nav">
                     <ul class="searchbar">
@@ -146,9 +140,9 @@
                         </li>
                     </ul>
                     <ul class="login">
-                        <li><a href="#"><span class="purple">햄승이</span>님</a></li>
+                        <li><a href="login.html">로그인</a></li>
                         <li>&ensp;|&ensp;</li>
-                        <li><a href="index.html">로그아웃</a></li>
+                        <li><a href="signup.html">회원가입</a></li>
                     </ul>
                 </nav>
                 <nav class="mb_nav">
@@ -160,7 +154,7 @@
                         <div class="mb_nav_top">
                             <ul class="mb_login">
                                 <li><i class="fa-regular fa-user"></i></li>
-                                <li><a href="#"><span class="purple">햄승이</span>님&ensp;</a>|<a href="index.html">&ensp;로그아웃&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a href="login.html">로그인&ensp;</a>|<a href="signup.html">&ensp;회원가입&ensp;<i class="fa-solid fa-chevron-right"></i></a></li>
                             </ul>
                             <a href="#"><i class="fa-solid fa-xmark"></i></a>
                         </div>
@@ -355,23 +349,270 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
             </section>
-            <!-- 가장인기있는 클래스 -->
-            <section class="popualclass">
+            <!-- 배너01 -->
+            <section class="banner01">
                 <div class="inner">
-                    <div class="swiper-container">
-                        <h2>가장 인기있는 클래스</h2>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide slide1">
-                                <div class="popualclass-contents contents1">
-                                    <div class="diy2">
-                                        <img
-                                            src="images/popularclassteacher.png"
-                                            alt=""
-                                            id="diy2img1"
-                                        />
-                                        <div class="diy2-h3">
+                    <div class="banner_wrap">
+                        <a href="success.html">
+                            <div class="banner_txt">
+                            우리의 성공이야기<i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <div class="banner_img">
+                            <img src="images/banner022222.svg" alt="banner01">
+                            </div> 
+                        </a>
+                    </div>
+                </div>
+            </section>                      
+            <!-- 이달의선생님 -->
+            <section class="teacher">
+                <div class="inner">
+                    <h2>재능기부 왕</h2>
+                    <div class="teacher_wrap">
+                        <div class="teacher_list">
+                            <div class="teacher_img">
+                            <img src="images/teacher01.png" alt="선생님1" />
+                            </div>
+                            <div class="teacher_info">
+                                <h3>김한빈</h3>                               
+                                <p>10월의 <b>" DIY "</b>부분 선생님</p>                                
+                                <span> - 마리모 어항꾸미기 선생님 <br>
+                                    - 2023년 상반기 DIY 부분 최대 수상<br>                                    
+                                </span>
+                                <div class="teacher_btn">
+                                    <button type="button">
+                                        <span>선생님</span> 보러가기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher_list">
+                            <div class="teacher_img">
+                            <img src="images/teacher02.png" alt="선생님1" />
+                            </div>
+                            <div class="teacher_info">
+                                <h3>김연우</h3>                                                                
+                                <p>10월의 <b>" IT "</b>부분 선생님</p>                                
+                                <span>
+                                    - 프로그래밍 / 개발 선생님 <br>
+                                    - 2023년 상반기 IT 부분 최대 수상<br>   
+                                </span>
+                                <div class="teacher_btn">
+                                    <button type="button">
+                                        <span>선생님</span> 보러가기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher_list">
+                            <div class="teacher_img">
+                            <img src="images/teacher03.png" alt="선생님1" />
+                            </div>
+                            <div class="teacher_info">
+                                <h3>장세희</h3>                                                                
+                                <p>10월의 <b>" 요리 "</b>부분 선생님</p>                
+                                <span> - 쿠킹 / 베이킹 선생님 <br>
+                                    - 2022년 하반기 DIY 부분 최대 수상<br>   
+                                </span>
+                                <div class="teacher_btn">
+                                    <button type="button">
+                                        <span>선생님</span> 보러가기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 인원모집 및 장소대여 -->
+                <section class="recruit">
+                    <div class="inner">
+                        <h1 class="recruit_title">꿈을 나누는 공간</h1>
+                        <div class="recruit_wrap">
+                            <!-- 인원 모집 -->
+                            <div class="recruit_with">
+                                <a href="notice.html"><div class="recruit_with_opacity">
+                                </div>
+                                    <div class="recruit_with_txt" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                                    <h1>함께 듣기 <i class="fa-solid fa-chevron-right" style="color: #ffffff;"> </i></h1>
+                                    <p>혼자 수업 듣기가 외롭다면,<br> 함께 들을 친구를 찾아보세요!</p>
+                                </div></a>
+                            </div>
+                            <!-- 장소 대여 -->
+                            <div class="recruit_place">
+                                <a href="notice.html"><div class="recruit_place_opacity">
+                                </div>
+                                <div class="recruit_place_txt" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                                    <h1>장소 대여 <i class="fa-solid fa-chevron-right" style="color: #ffffff;"> </i></h1>
+                                    <p>수업할 장소를 찾고 있나요? <br> 편하게 사용하세요!</p>
+                                </div></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 배너02 -->
+                <section class="banner02">
+                    <div class="inner">
+                        <div class="banner02_wrap">
+                        <h1 class="banner02_title">Gummi 포도알 소개</h1>
+                        <div class="banner02_inner">
+                            <div class="banner02_section1">
+                                <div class="banner02_section1_img">
+                                <img src="images/banner02_1.svg" alt="포도알 적립"></div>
+                                <h3><span class="b2anner0_span">90</span>분 수업당 포도 <span class="b2anner0_span"> 한 알 </span> 적립</h3>
+                                <p class="banner02_hide">수업이 끝난 후 선생님이 수강 확인 버튼을 누르면 적립 완료</p>
+                                <p class="banner02_block">선생님이 수강 확인 버튼을 누르면 적립 완료</p>
+                            </div>
+                            <div class="banner02_section2">
+                                <div class="banner02_section1_img">
+                                <img src="images/banner02_2.svg" alt="500포인트"></div>
+                                <h3>포도 한 알에 <span class="b2anner0_span">500</span>포인트</h3>
+                                <p>포도알을 모아 포인트로 전환할 수 있어요</p>
+                            </div>
+                            <div class="banner02_section3">
+                                <div class="banner02_section1_img">
+                                <img src="images/banner02_3.svg" alt="1000포인트 전환"></div>
+                                <h3><span class="b2anner0_span">1000</span>포인트 부터 전환 가능</h3>
+                                <p>포인트를 기프티콘으로 교환해보세요</p>
+                            </div>
+                        </div>
+                        <button>포인트 전환하러 가기</button>
+                    </div>
+                </div>
+                </section>
+                <!-- 가장인기있는 클래스 -->
+                <section class="popualclass">
+                    <div class="inner">
+                        <div class="swiper-container">
+                            <h2>가장 인기있는 클래스</h2>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <div class="popualclass-contents contents1">
+                                        <div class="diy2">
+                                            <img
+                                                src="images/popularclassteacher.png"
+                                                alt=""
+                                                id="diy2img1"
+                                            />
+                                            <div class="diy2-h3">
+                                                    <div class="diy2-star">
+                                                <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                                            </div>   
+                                            <h3> 
+                                                    <span >향수</span
+                                                    ><br/>나에게 어울리는
+                                                    향수를 찾는 여정 <br />
+                                                    나만의 향수를 찾는 그
+                                                    날까지, 함께 하겠습니다.
+                                                </h3>
+                                             <p>
+                                                #DIY #향수 #조향 #키트 #수제
+                                            </p>
+                                        </div>
+                                            
+                                        </div>
+                                        <a href="subscription.html">
+                                            <button id="bt1">신청하기</button>
+                                        </a>
+                                        <div class="tooltip">
+                                            <span class="tooltiptext"
+                                                >향유정 선생님</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide slide2">
+                                    <div class="popualclass-contents contents2">
+                                        <div class="diy2">
+                                            <img
+                                                src="images/popularclassteacher2.png"
+                                                alt=""
+                                                id="diy2img1"
+                                            />
+                                            <div class="diy2-h3">
+                                                <div class="diy2-star">
+                                                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                                                </div> 
+                                                <h3>
+                                                    <span>IT</span><br />서툴고
+                                                    모르시는 것이 당연해요.
+                                                    <br />친절하게
+                                                    안내해드릴게요!
+                                                </h3> 
+                                                <p>
+                                                #IT #교육 #프로그래밍
+                                                #데이터분석 #자격증
+                                            </p>
+                                            </div>
+                                           
+                                        </div>
+                                        <a href="subscription.html">
+                                            <button id="bt1">신청하기</button>
+                                        </a>
+                                        <div class="tooltip">
+                                            <span class="tooltiptext"
+                                                >김연우 선생님</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <div class="popualclass-contents contents3">
+                                        <div class="diy2">
+                                            <img
+                                                src="images/popularclassteacher4.png"
+                                                alt=""
+                                                id="diy2img1"
+                                            />
+                                            <div class="diy2-h3">
+                                                <div class="diy2-star">
+                                                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                            <i class="fa-solid fa-star" style="color: #dadad9"></i>
+                                                </div> 
+                                                <h3>
+                                                    <span>쿠킹</span
+                                                    ><br />아마추어도 잘 할 수
+                                                    있습니다. <br />
+                                                    기술과 노하우로 여러분의
+                                                    실력을 빛나게 해드릴게요!
+                                                </h3>
+                                            <p>#쿠킹 #요리 #음식 #키트 #빵</p>
+                                        </div>
+                                            
+                                        </div>
+                                        <a href="subscription.html">
+                                            <button id="bt1">신청하기</button>
+                                        </a>
+                                        <div class="tooltip">
+                                            <span class="tooltiptext"
+                                                >장세희 선생님</span
+                                            >
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide4">
+                                    <div class="popualclass-contents contents4">
+                                        <div class="diy2">
+                                            <img
+                                                src="images/popularclassteacher3.png"
+                                                alt=""
+                                                id="diy2img1"
+                                            />
+                                            <div class="diy2-h3">
                                                 <div class="diy2-star">
                                             <i class="fa-solid fa-star" style="color: #ffd400"></i>
                     <i class="fa-solid fa-star" style="color: #ffd400"></i>
@@ -386,7 +627,7 @@
                                                 나만의 향수를 찾는 그
                                                 날까지, 함께 하겠습니다.
                                             </h3>
-                                         <p>
+                                            <p>
                                             #DIY #향수 #조향 #키트 #수제
                                         </p>
                                     </div>
@@ -430,7 +671,7 @@
                                             #데이터분석 #자격증
                                         </p>
                                         </div>
-                                       
+                                        
                                     </div>
                                     <a href="subscription.html">
                                         <button id="bt1">신청하기</button>
@@ -490,192 +731,79 @@
                                         />
                                         <div class="diy2-h3">
                                             <div class="diy2-star">
-                                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                                    </div>   
-                                    <h3> 
-                                            <span >향수</span
-                                            ><br/>나에게 어울리는
-                                            향수를 찾는 여정 <br />
-                                            나만의 향수를 찾는 그
-                                            날까지, 함께 하겠습니다.
-                                        </h3>
+                                                <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                                            </div> 
+                                            <h3>
+                                                <span>DIY</span
+                                                ><br />마리모에 대해 궁금한
+                                                것이 많으신가요~? <br />
+                                                귀엽고 흥미로운 애완식물
+                                                마리모 함께 만들어봐요!
+                                            </h3>
                                         <p>
-                                        #DIY #향수 #조향 #키트 #수제
-                                    </p>
-                                </div>
-                                    
-                                </div>
-                                <a href="subscription.html">
-                                    <button id="bt1">신청하기</button>
-                                </a>
-                                <div class="tooltip">
-                                    <span class="tooltiptext"
-                                        >향유정 선생님</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide slide2">
-                            <div class="popualclass-contents contents2">
-                                <div class="diy2">
-                                    <img
-                                        src="images/popularclassteacher2.png"
-                                        alt=""
-                                        id="diy2img1"
-                                    />
-                                    <div class="diy2-h3">
-                                        <div class="diy2-star">
-                                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                                        </div> 
-                                        <h3>
-                                            <span>IT</span><br />서툴고
-                                            모르시는 것이 당연해요.
-                                            <br />친절하게
-                                            안내해드릴게요!
-                                        </h3> 
-                                        <p>
-                                        #IT #교육 #프로그래밍
-                                        #데이터분석 #자격증
-                                    </p>
+                                            #DIY #마리모 #어항 #키트 #꾸미기
+                                        </p>
                                     </div>
-                                    
-                                </div>
-                                <a href="subscription.html">
-                                    <button id="bt1">신청하기</button>
-                                </a>
-                                <div class="tooltip">
-                                    <span class="tooltiptext"
-                                        >김연우 선생님</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide slide3">
-                            <div class="popualclass-contents contents3">
-                                <div class="diy2">
-                                    <img
-                                        src="images/popularclassteacher4.png"
-                                        alt=""
-                                        id="diy2img1"
-                                    />
-                                    <div class="diy2-h3">
-                                        <div class="diy2-star">
-                                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #dadad9"></i>
-                                        </div> 
-                                        <h3>
-                                            <span>쿠킹</span
-                                            ><br />아마추어도 잘 할 수
-                                            있습니다. <br />
-                                            기술과 노하우로 여러분의
-                                            실력을 빛나게 해드릴게요!
-                                        </h3>
-                                    <p>#쿠킹 #요리 #음식 #키트 #빵</p>
-                                </div>
-                                    
-                                </div>
-                                <a href="subscription.html">
-                                    <button id="bt1">신청하기</button>
-                                </a>
-                                <div class="tooltip">
-                                    <span class="tooltiptext"
-                                        >장세희 선생님</span
-                                    >
-                                    
+                                        
+                                    </div>
+                                    <a href="subscription.html">
+                                        <button id="bt1">신청하기</button>
+                                    </a>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext"
+                                            >김한빈 선생님</span
+                                        >
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide slide4">
-                            <div class="popualclass-contents contents4">
-                                <div class="diy2">
-                                    <img
-                                        src="images/popularclassteacher3.png"
-                                        alt=""
-                                        id="diy2img1"
-                                    />
-                                    <div class="diy2-h3">
-                                        <div class="diy2-star">
-                                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                                        </div> 
-                                        <h3>
-                                            <span>DIY</span
-                                            ><br />마리모에 대해 궁금한
-                                            것이 많으신가요~? <br />
-                                            귀엽고 흥미로운 애완식물
-                                            마리모 함께 만들어봐요!
-                                        </h3>
-                                    <p>
-                                        #DIY #마리모 #어항 #키트 #꾸미기
-                                    </p>
-                                </div>
-                                    
-                                </div>
-                                <a href="subscription.html">
-                                    <button id="bt1">신청하기</button>
-                                </a>
-                                <div class="tooltip">
-                                    <span class="tooltiptext"
-                                        >김한빈 선생님</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide slide5">
-                            <div class="popualclass-contents contents5">
-                                <div class="diy2">
-                                    <img
-                                        src="images/popularclassteacher5.png"
-                                        alt=""
-                                        id="diy2img1"
-                                    />
-                                    <div class="diy2-h3">
-                                        <div class="diy2-star">
-                                            <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #ffd400"></i>
-                    <i class="fa-solid fa-star" style="color: #dadad9"></i>
-                                        </div> 
-                                        <h3>
-                                            <span class="diy-h22">키오스크</span
-                                            ><br />친절하게
-                                            설명해드리겠습니다. <br />
-                                            하나하나 차근차근 배워봐요!
-                                        </h3>
-                                        <p>
-                                        #키오스크 #무인 #주문 #편의
-                                        #안내
-                                    </p>
-                                </div>
-                                    
-                                </div>
-                                <a href="subscription.html">
-                                    <button id="bt1">신청하기</button>
-                                </a>
-                                <div class="tooltip">
-                                    <span class="tooltiptext"
-                                        >김이박 선생님</span
-                                    >
+                            <div class="swiper-slide slide5">
+                                <div class="popualclass-contents contents5">
+                                    <div class="diy2">
+                                        <img
+                                            src="images/popularclassteacher5.png"
+                                            alt=""
+                                            id="diy2img1"
+                                        />
+                                        <div class="diy2-h3">
+                                            <div class="diy2-star">
+                                                <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd400"></i>
+                        <i class="fa-solid fa-star" style="color: #dadad9"></i>
+                                            </div> 
+                                            <h3>
+                                                <span class="diy-h22">키오스크</span
+                                                ><br />친절하게
+                                                설명해드리겠습니다. <br />
+                                                하나하나 차근차근 배워봐요!
+                                            </h3>
+                                            <p>
+                                            #키오스크 #무인 #주문 #편의
+                                            #안내
+                                        </p>
+                                    </div>
+                                        
+                                    </div>
+                                    <a href="subscription.html">
+                                        <button id="bt1">신청하기</button>
+                                    </a>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext"
+                                            >김이박 선생님</span
+                                        >
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </section>
                 <!-- 새로 오픈한 클래스 -->
@@ -906,264 +1034,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </section>
-            <!-- 배너01 -->
-            <section class="banner01">
-                <div class="inner">
-                    <div class="banner_wrap">
-                        <a href="success.html">
-                            <div class="banner_txt">
-                            우리의 성공이야기<i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                            <div class="banner_img">
-                            <img src="images/banner022222.svg" alt="banner01">
-                            </div> 
-                        </a>
-                    </div>
-                </div>
-            </section>                      
-            <!-- 내가 들은 클래스 -->
-            <section class="class">
-                <div class="inner">
-                    <div class="myclass">
-                        <div class="myclass2">
-                            <h2>내가 들었던 클래스</h2>
-                            <h3 class="myclass2podo">
-                                안녕하세요,<span class="podo22">햄승이</span
-                                >님!<br />
-                                <span class="podo33"
-                                    >수업을 통해서 영양소 가득한 나만의
-                                    포도를 키워봐요!</span
-                                >
-                            </h3>
-                            <!-- <img src="images/sche.png" alt=""> -->
-                            <div class="myclass2-1">
-                                <!-- <img src="images/banner_people.png" alt=""> -->
-                                <div class="myclass2-2">
-                                    <h2>2023-10-13(금)</h2>
-                                </div>
-                                <div class="myclass2-3">
-                                    <table class="fade-in-table">
-                                        <tr>
-                                            <th scope="col" class="th1">
-                                                시간
-                                            </th>
-                                            <th scope="col" class="th1">
-                                                수업
-                                            </th>
-                                            <th
-                                                scope="col"
-                                                colspan="1"
-                                                class="th1"
-                                            >
-                                                장소
-                                            </th>
-                                            <!-- <th scope="col" class="th1">
-                                                수강
-                                            </th> -->
-                                            <!-- <th scope="col">조회수</th> : 밀려난 셀 제거-->
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="1" class="th2">
-                                                10:00 ~ 11:00
-                                            </td>
-                                            <td>
-                                                김연우 선생님 / <br> IT 클래스
-                                            </td>
-                                            <td>대여</td>
-                                            <td class="td2">수강완료</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="1" class="th2">
-                                                14:00 ~ 15:00
-                                            </td>
-                                            <td>
-                                                장세희 선생님 / <br>쿠킹 클래스
-                                            </td>
-                                            <td>대여</td>
-                                            <td class="td3">수강확인</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="1" class="th2">
-                                                16:00 ~ 17:00
-                                            </td>
-                                            <td>
-                                                김한빈 선생님 / <br>마리모 클래스
-                                            </td>
-                                            <td>집</td>
-                                            <td class="td3">수강확인</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-            <!-- 회원님을 위한 클래스 -->
-                        <div class="myclass3">
-                            <h2 id="myclass322"><span class="myclass3_ham">햄승이</span>님을 위한 클래스</h2>
-                             <div class="scrollable-content">   
-                                <div class="myclass33"> <div class="content">
-                            <div class="myclass3-inner">
-                                
-                                <div class="myclass3-1">
-                                    <img
-                                        src="images/subscription_img_main 1.png"
-                                        alt=""
-                                    />
-                                    <div class="myclassheart">
-                                        <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
-                                        </path></svg>
-                                      </div>
-                                    <div class="myclass3-2">
-                                        <h3>
-                                            향수 마스터되는법,
-                                            김향기의 독학비법서
-                                        </h3>
-                                        <h4>향수 | 김향기</h4>
-                                    </div>
-                                </div>
-                                <div class="myclass3-1">
-                                    <img
-                                        src="images/marimo.png"
-                                        alt=""
-                                    />
-                                    <div class="myclassheart">
-                                        <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
-                                        </path></svg>
-                                      </div>
-                                    <div class="myclass3-2">
-                                        <h3>
-                                            동글동글 귀여운 마리모, 
-                                            나만의 반려식물 
-                                        </h3>
-                                        <h4>마리모 | 이박사</h4>
-                                    </div>
-                                </div>
-                                <div class="myclass3-1">
-                                    <img
-                                        src="images/itit.png"
-                                        alt=""
-                                    />
-                                    <div class="myclassheart">
-                                        <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
-                                        </path></svg>
-                                      </div>
-                                    <div class="myclass3-2">
-                                        <h3>
-                                            'IT·프로그래밍 20년' 선생님의 IT 교육
-                                        </h3>
-                                        <h4>IT | 박공주</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="myclass3-inner">
-                                <div class="myclass3-1">
-                                    <img
-                                        src="images/yori.png"
-                                        alt=""
-                                    />
-                                    <div class="myclassheart">
-                                        <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
-                                        </path></svg>
-                                      </div>
-                                    <div class="myclass3-2">
-                                        <h3>
-                                            모던 한식의 새로운 발견
-                                            초보자도 쉽게!
-                                        </h3>
-                                        <h4>요리 | 김요리</h4>
-                                    </div>
-                                </div>
-                                <div class="myclass3-1">
-                                    <img
-                                        src="images/kiho.png"
-                                        alt=""
-                                    />
-                                    <div class="myclassheart">
-                                        <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
-                                        </path></svg>
-                                      </div>
-                                    <div class="myclass3-2">
-                                        <h3>
-                                            쉽고 재밌는 키오스크,
-                                            키오스크의 새로운 발견
-                                        </h3>
-                                        <h4>키오스크 | 박키오</h4>
-                                    </div>
-                                </div>
-                                <div class="myclass3-1">
-                                    <img
-                                        src="images/living2.png"
-                                        alt=""
-                                    />
-                                    <div class="myclassheart">
-                                        <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
-                                        </path></svg>
-                                      </div>
-                                    <div class="myclass3-2">
-                                        <h3>
-                                            삶의 질 2배 상승!
-                                            선생님의 시크릿 노하우
-                                        </h3>
-                                        <h4>리빙 | 권선생</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="myclass3-inner">
-                                <div class="myclass3-1">
-                                    <img
-                                        src="images/yoyori.png"
-                                        alt=""
-                                    />
-                                    <div class="myclassheart">
-                                        <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
-                                        </path></svg>
-                                      </div>
-                                    <div class="myclass3-2">
-                                        <h3>
-                                            왕초보에서 선생님으로!
-                                            내가 만든 쿠키
-                                        </h3>
-                                        <h4>쿠킹 | 김왕자</h4>
-                                        
-                                    </div>
-                                </div>
-                                <div class="myclass3-1">
-                                    <img
-                                        src="images/candle.png"
-                                        alt=""
-                                    />
-                                    <div class="myclassheart">
-                                        <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
-                                        </path></svg>
-                                      </div>
-                                    <div class="myclass3-2">
-                                        <h3>
-                                            잊을 수 없는 매혹적인 수업!
-                                            특별한 노하우
-                                
-                                        </h3>
-                                        <h4>캔들 | 이캔들</h4>
-                                    </div>
-                                </div>
-                                <div class="myclass3-1">
-                                    <img
-                                        src="images/bis.png"
-                                        alt=""
-                                    />
-                                    <div class="myclassheart">
-                                        <svg viewBox="0 0 24 24" data-testid="heart-thin" class="myclassheart"><path d="M20.75 4.8C19.55 3.6 18 3 16.45 3c-1.55 0-3.1.6-4.3 1.8-.05.05-.1.15-.15.2a.69.69 0 0 1-.15-.2C10.65 3.6 9.1 3 7.55 3c-1.55 0-3.1.6-4.3 1.8-2.35 2.4-2.35 6.35 0 8.75 2.35 2.4 8.55 8.35 8.55 8.35.05.1.15.1.2.1.05 0 .15 0 .15-.05 0 0 6.2-5.95 8.55-8.35 2.35-2.4 2.4-6.35.05-8.8ZM12 7.35c.35 0 .45-.4.75-.8 1.6-1.85 4.25-2.4 6.25-.9 1.3 1 1.95 2.75 1.65 4.35-.3 1.7-1.75 2.9-3 4.2-.65.65-5.65 5.4-5.65 5.4s-5-4.75-5.65-5.4c-1.25-1.25-2.7-2.5-3-4.2-.3-1.6.35-3.4 1.65-4.35 2-1.5 4.65-1 6.2.9.35.4.45.8.8.8Z" class="css-17f4zqp">
-                                        </path></svg>
-                                      </div>
-                                    <div class="myclass3-2">
-                                        <h3>
-                                            'DIY 경력 10년'
-                                            선생님의 공예 교육
-                                        </h3>
-                                        <h4>공예 | 김교육</h4>
                                     </div>
                                 </div>
                             </div>
@@ -1171,126 +1041,6 @@
                     </div>
                 </section>
             <!-- 자주 묻는 질문 및 게시판 -->
-                </div>
-            </div>
-        </div>
-            </section>
-            <!-- 이달의선생님 -->
-            <section class="teacher">
-                <div class="inner">
-                    <h2>재능기부 왕</h2>
-                    <div class="teacher_wrap">
-                        <div class="teacher_list">
-                            <div class="teacher_img">
-                            <img src="images/teacher01.png" alt="선생님1" />
-                            </div>
-                            <div class="teacher_info">
-                                <h3>김한빈</h3>                               
-                                <p>10월의 <b>" DIY "</b>부분 선생님</p>                                
-                                <span> - 마리모 어항꾸미기 선생님 <br>
-                                    - 2023년 상반기 DIY 부분 최대 수상<br>                                    
-                                </span>
-                                <div class="teacher_btn">
-                                    <button type="button">
-                                        <span>선생님</span> 보러가기
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="teacher_list">
-                            <div class="teacher_img">
-                            <img src="images/teacher02.png" alt="선생님1" />
-                            </div>
-                            <div class="teacher_info">
-                                <h3>김연우</h3>                                                                
-                                <p>10월의 <b>" IT "</b>부분 선생님</p>                                
-                                <span>
-                                    - 프로그래밍 / 개발 선생님 <br>
-                                    - 2023년 상반기 IT 부분 최대 수상<br>   
-                                </span>
-                                <div class="teacher_btn">
-                                    <button type="button">
-                                        <span>선생님</span> 보러가기
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="teacher_list">
-                            <div class="teacher_img">
-                            <img src="images/teacher03.png" alt="선생님1" />
-                            </div>
-                            <div class="teacher_info">
-                                <h3>장세희</h3>                                                                
-                                <p>10월의 <b>" 요리 "</b>부분 선생님</p>                
-                                <span> - 쿠킹 / 베이킹 선생님 <br>
-                                    - 2022년 하반기 DIY 부분 최대 수상<br>   
-                                </span>
-                                <div class="teacher_btn">
-                                    <button type="button">
-                                        <span>선생님</span> 보러가기
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- 인원모집 및 장소대여 -->
-                <section class="recruit">
-                    <div class="inner">
-                        <h1 class="recruit_title">꿈을 나누는 공간</h1>
-                        <div class="recruit_wrap">
-                            <!-- 인원 모집 -->
-                            <div class="recruit_with">
-                                <a href="notice.html"><div class="recruit_with_opacity">
-                                </div>
-                                <div class="recruit_with_txt" data-aos="fade-right" data-aos-easing="ease-in-sine">
-                                    <h1>함께 듣기 <i class="fa-solid fa-chevron-right" style="color: #ffffff;"> </i></h1>
-                                    <p>혼자 수업 듣기가 외롭다면,<br> 함께 들을 친구를 찾아보세요!</p>
-                                </div></a>
-                            </div>
-                            <!-- 장소 대여 -->
-                            <div class="recruit_place">
-                                <a href="notice.html"><div class="recruit_place_opacity">
-                                </div>
-                                <div class="recruit_place_txt" data-aos="fade-right" data-aos-easing="ease-in-sine">
-                                    <h1>장소 대여 <i class="fa-solid fa-chevron-right" style="color: #ffffff;"> </i></h1>
-                                    <p>수업할 장소를 찾고 있나요? <br> 편하게 사용하세요!</p>
-                                </div></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- 배너02 -->
-                <section class="banner02">
-                    <div class="inner">
-                        <div class="banner02_wrap">
-                        <h1 class="banner02_title">Gummi 포도알 소개</h1>
-                        <div class="banner02_inner">
-                            <div class="banner02_section1">
-                                <div class="banner02_section1_img">
-                                <img src="images/banner02_1.svg" alt="포도알 적립"></div>
-                                <h3><span class="b2anner0_span">90</span>분 수업당 포도 <span class="b2anner0_span"> 한 알 </span> 적립</h3>
-                                <p class="banner02_hide">수업이 끝난 후 선생님이 수강 확인 버튼을 누르면 적립 완료</p>
-                                <p class="banner02_block">선생님이 수강 확인 버튼을 누르면 적립 완료</p>
-                            </div>
-                            <div class="banner02_section2">
-                                <div class="banner02_section1_img">
-                                <img src="images/banner02_2.svg" alt="500포인트"></div>
-                                <h3>포도 한 알에 <span class="b2anner0_span">500</span>포인트</h3>
-                                <p>포도알을 모아 포인트로 전환할 수 있어요</p>
-                            </div>
-                            <div class="banner02_section3">
-                                <div class="banner02_section1_img">
-                                <img src="images/banner02_3.svg" alt="1000포인트 전환"></div>
-                                <h3><span class="b2anner0_span">1000</span>포인트 부터 전환 가능</h3>
-                                <p>포인트를 기프티콘으로 교환해보세요</p>
-                            </div>
-                        </div>
-                        <button>포인트 전환하러 가기</button>
-                    </div>
-                </div>
-                </section>
-                <!-- 자주 묻는 질문 및 게시판 -->
             <section class="class2">
                 <div class="inner">
                     <div class="myclass-notice">
