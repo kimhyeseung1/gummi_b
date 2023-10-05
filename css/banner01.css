@@ -1,84 +1,116 @@
-.banner01{
-    width: 100%;
-    /* height: 200px; */
-    font-family: "GangwonState";
-    margin-top: 50px;
-    margin-bottom: 50px;
+.banner01 {
+  width: 100%;
+  /* height: 200px; */
+  font-family: "GangwonState";
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
 }
 .banner01 .inner {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-.banner_wrap{
-    width: 100%;
-    background-color: #7EC19D;
-    /* display: flex; */
-    border-radius: 10px;
-
+.banner01 .fa-arrow-right:before {
+  content: "\f061";
+  position: absolute;
+}
+.banner_wrap {
+  width: 100%;
+  background-color: #7ec19d;
+  /* display: flex; */
+  border-radius: 10px;
 }
 .banner_wrap > a {
-    /* display: block; */
-    cursor: pointer;
-    display: flex;
-    width: 100%;
-}
-.banner_txt{
-    width:65%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* padding: 5% 0; */
-}
-.banner_img{
-    width: 29%;
-    /* height: 100%; */
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    padding-right: 5%;
-}
-.banner_img img{
-    width: 100%;
-    /* display: block; */
+  /* display: block; */
+  cursor: pointer;
+  display: flex;
+  width: 100%;
 }
 .banner_txt {
-    font-size: 2.5vw;
-    font-weight: 700;
-    color: #fff;
-    width: 100%;
-    /* height: 100%; */
-    padding-left: 10%;
-    display: flex;
+  width: 65%;
+  /* display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center; */
+  /* padding: 5% 0; */
 }
-.banner_txt >  i{
-    font-size: 3vw;
-    padding-left: 30px;
-    color: #fff;
+.banner_img {
+  width: 29%;
+  /* height: 100%; */
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-right: 5%;
 }
-
+.banner_img img {
+  width: 100%;
+  /* display: block; */
+}
+.banner_txt {
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  /* height: 100%; */
+  padding-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.banner_txt > i {
+  font-size: 3vw;
+  padding-left: 30px;
+  color: #fff;
+}
+.banner .fa-arrow-right:before {
+    content: "\f061";
+    position: absolute;
+}
+.banner_txt > p {
+  font-size: 4vw;
+  color: #fff;
+}
+.banner_txt > p > span {
+  font-size: 2.3vw;
+  color: #333;
+}
 @media all and (max-width: 1200px) {
-    .banner_txt  {
-        font-size: 4.4vw
+  .banner_txt {
+    font-size: 4.4vw;
+  }
+}
+@media all and (max-width: 930px) {
+  /* .banner_txt > p{
+        font-size: 45px;
+        color: #fff;
     }
+    .banner_txt >p > span{
+        font-size: 25px;
+        color: #333
+    } */
 }
 @media all and (max-width: 900px) {
-    .banner_txt  {
-        font-size: 4.6vw
-    }
-    .banner_wrap{
-        padding: 2% 0;
-    }
+  .banner_txt {
+    font-size: 4.6vw;
+  }
+  .banner_wrap {
+    padding: 2% 0;
+  }
 }
 @media all and (max-width: 580px) {
-    .banner_txt  {
-        font-size: 5.5vw;
-        justify-content: center;
-    }
-    .banner_wrap{
-        padding: 5% 0;
-    }
-    .banner_img{
-        display: none;
-    }
+  .banner_txt {
+    font-size: 5.5vw;
+    justify-content: center;
+  }
+  .banner_wrap {
+    /* padding: 5% 0; */
+  }
+  .banner_img {
+    /* display: none; */
+  }
+}
+@media all and (max-width: 320px) {
+  .banner_wrap {
+    padding: 0;
+  }
+  .banner_img {
+    padding: 10px;
+  }
 }
