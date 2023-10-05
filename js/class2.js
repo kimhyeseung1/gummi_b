@@ -167,37 +167,42 @@ $(function () {
 
 $(function(){
   $('.customer-logos').slick({
-      slidesToShow: 6,
+      slidesToShow: 8,
       slidesToScroll: 1,
-      // spaceBetween: 100,
       autoplay: true,
       autoplaySpeed: 1500,
       arrows: false,
       dots: false,
       pauseOnHover: false,
       responsive: [{
-          breakpoint: 768,
+          breakpoint:1920,
           settings: {
-              slidesToShow: 4
+              slidesToShow: 8,
           }
       },
-       {
-          breakpoint: 520,
+      {
+          breakpoint:1024,
           settings: {
-              slidesToShow: 2
-          },
+              slidesToShow: 6,
+          }
       },
       {
-        breakpoint: 480,
-        settings: {
-            slidesToShow: 2
-        }
+          breakpoint:768,
+          settings: {
+              slidesToShow: 3,
+          }
       },
-       {
+      {
+          breakpoint:480,
+          settings: {
+              slidesToShow:2,
+          }
+      },
+      {
           breakpoint: 320,
           settings: {
-              slidesToShow: 1
-          },
+              slidesToShow: 2,
+          }
       }]
   });
 });
