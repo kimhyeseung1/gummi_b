@@ -11,12 +11,13 @@ height: 100%;
     /* 배너 전체 */
     .banner02_wrap {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     }
     /* 배너 타이틀 */
     .banner02_title {
     font-size: 30px;
-    padding: 50px 0 40px 0;
+    padding: 70px 0 50px 0;
+    text-align: center;
     }
     .banner02_inner {
     width: 100%;
