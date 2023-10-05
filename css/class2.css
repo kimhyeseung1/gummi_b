@@ -136,6 +136,7 @@
 .slick-slide img
 {
     display: block;
+    cursor: pointer;
 }
 .slick-slide.slick-loading img
 {
