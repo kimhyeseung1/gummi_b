@@ -11,7 +11,7 @@
     text-align: center;
     font-size: 1.7rem;
     font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
-    padding: 50px 0% 3% 0%;
+    padding: 80px 0% 50px 0%;
 }
 .visual_content_box {
     position: relative;
@@ -173,6 +173,7 @@ td > br{
         padding: 0;
     }
     .visual_left_content > a > div > img {
+        width: 80px;
         margin-right: 15px;
     }
     .visual_right_content {
@@ -181,6 +182,9 @@ td > br{
     }
 }
 @media all and (max-width: 760px) {
+    .visual_left_content > a > div > img {
+        width: 60px;
+    }
     .visual_timetable_date {
         font-size: 16px;
         color: #fff;
@@ -197,13 +201,13 @@ td > br{
         vertical-align: middle;
         padding: 10px;
     }
-    .visual_timetable_table th {
-        font-size: 18px;
-        font-weight: 700;
-    }
     .visual_timetable_table th,
     .visual_timetable_table td {
         font-size: 13px;
+    }
+    .visual_timetable_table th {
+        font-size: 17px;
+        font-weight: 700;
     }
 }
 @media all and (max-width: 700px) {
@@ -223,6 +227,10 @@ td > br{
         font-size: 12px;
         font-weight: 700;
     }
+    .visual_timetable_table th {
+        font-size: 16px;
+        font-weight: 700;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -239,6 +247,10 @@ td > br{
     .visual_left_content > a > div > img {
         width: 50px;
     }
+    .visual_timetable_table th {
+        font-size: 15px;
+        font-weight: 700;
+    }
 }
 @media screen and (max-width: 390px){
     .visual_timetable_table th,
@@ -250,5 +262,9 @@ td > br{
     .visual_timetable_date {
         font-size: 16px;
         padding-left: 20px;
+    }
+    .visual_timetable_table th {
+        font-size: 14px;
+        font-weight: 700;
     }
 }
