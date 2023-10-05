@@ -72,11 +72,27 @@
   font-size: 2.3vw;
   color: #333;
 }
+
+/* 반응형 */
+@media all and (max-width: 1440px){
+  .banner01{
+    padding: 4vw 0;
+  }
+}
 @media all and (max-width: 1200px) {
+  .banner01{
+    padding: 3.5vw 0;
+  }
   .banner_txt {
     font-size: 4.4vw;
   }
 }
+@media all and (max-width: 1040px){
+  .banner01{
+    padding: 2.5vw 0;
+  }
+}
+
 @media all and (max-width: 930px) {
   /* .banner_txt > p{
         font-size: 45px;
@@ -95,6 +111,11 @@
     padding: 2% 0;
   }
 }
+@media all and (max-width: 760px){
+  .banner01{
+    padding: 2vw 0;
+  }
+}
 @media all and (max-width: 580px) {
   .banner_txt {
     font-size: 5.5vw;
@@ -107,11 +128,24 @@
     /* display: none; */
   }
 }
+@media all and (max-width: 470px){
+  .banner01{
+    padding: 1.2vw 0;
+  }
+}
+@media all and (max-width: 420px){
+  .banner01{
+    padding: 0.2vw 0;
+  }
+}
 @media all and (max-width: 320px) {
   .banner_wrap {
     padding: 0;
   }
   .banner_img {
     padding: 10px;
+  }
+  .banner01{
+    padding: 0;
   }
 }
