@@ -1,11 +1,11 @@
 @charset "utf-8";
 .class {
-    padding-top: 50px;
+    padding-top: 70px;
     /* background-color: #d1c3ff52; */
 }
 .class2-1 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     /* background-color: #d1c3ff52; */
 }
 .myclassheart {
@@ -60,7 +60,7 @@
   /* 협약기업 Slider */
  .classgo2{
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
     flex-direction: column;
     align-items: center;
 } 
@@ -772,8 +772,9 @@ width: 100%;
 /* 자주 묻는 질문 */
 
 .class2 {
-    padding: 50px 0;
-    padding-bottom: 41px;
+    padding: 70px 0;
+    padding-bottom: 50px;
+    background-color: #f7f7f7;
 }
 .col2 {
     width: 100%;
