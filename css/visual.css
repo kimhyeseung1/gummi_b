@@ -6,12 +6,133 @@
     margin-bottom: 50px;
     letter-spacing: 0.7px;
 }
+/* 슬라이더 */
+.visual .swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.visual .swiper-wrapper {
+    width: 100%;
+    position: relative;
+}
+.visual .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.visual .swiper-slide img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    filter: brightness(0.5);
+}
+.visual .swiper-slide .inner {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.visual .swiper-slide-text-title {
+    font-weight: 700;
+    font-size: 5vw;
+    color: #f0f0f0;
+    padding-bottom: 1vw;
+}
+.visual .swiper-slide-text-text {
+    font-size: 1vw;
+    line-height: 1.35;
+    color: #f0f0f0;
+}
+.visual .swiper-button-prev,
+.visual .swiper-button-next {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.1rem;
+}
+.visual .swiper-button-prev:after,
+.visual .swiper-button-next:after {
+    font-size: 1.65rem !important;
+    font-weight: 600 !important;
+    color: #f0f0f0;
+}
+.visual .swiper-pagination-bullet,
+.visual .swiper-pagination-bullet-active {
+    background-color: #f0f0f0;
+}
+/* 비주얼 바 */
+.visual_bar {
+    width: 100%;
+    height: 95px;
+    background-color: #f7f7f7;
+}
+.visual_bar .inner {
+    width: 100%;
+    height: 100%;
+    /* background-color: #cccccc; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.visual_bar_content {
+    display: flex;
+}
+.visual_bar_content > li {
+    text-align: center;
+    padding: 10px 0;
+}
+.visual_bar_content > li > a {
+    display: inline-block;
+    padding: 0px 15px;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+.visual_bar_content > li:last-child > a {
+    border-right: none;
+}
+.visual_bar_content > li > a > img {
+    width: 38px;
+}
+.visual_bar_text {
+    display: block;
+    color: #f0f0f0;
+    color: #333;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.visual_bar_number {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+.visual_bar_number > li:first-child {
+    padding-right: 10px;
+}
+.visual_bar_number > li:last-child {
+    font-size: 30px;
+}
+/* 바로가기&시간표 */
 .visual_title {
     width: 100%;
     text-align: center;
     font-size: 1.7rem;
     font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
-    padding: 50px 0% 3% 0%;
+    padding: 50px 0% 50px 0%;
+    font-weight: 700;
 }
 .visual_content_box {
     position: relative;
@@ -67,14 +188,6 @@
 .visual_board:hover div {
     transform: scale(1.125);
     transition: all 0.3s;
-}
-.visual_board {
-    position: relative;
-    display: block;
-    padding: 10px;
-    border-radius: 10px;
-    margin-right: 15px;
-    background-color: #a47fbc;
 }
 .link {
     position: absolute;
@@ -144,8 +257,22 @@
 .visual_timetable_class:hover {
     color: #a47fbc;
 }
+.login_before {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 td > br{
     display: none;
+}
+@media all and (max-width: 1680px) {
+    .visual .swiper-slide-text-text {
+        font-size: 1.4vw;
+    }
 }
 @media all and (max-width: 1080px) {
     .visual_timetable_table th,
@@ -173,14 +300,28 @@ td > br{
         padding: 0;
     }
     .visual_left_content > a > div > img {
+        width: 80px;
         margin-right: 15px;
     }
     .visual_right_content {
         width: 100%;
         margin-top: 15px;
     }
+    .visual_bar_content > li > a > img {
+        width: 33px;
+    }
+    .visual_bar_number {
+        display: flex;
+        font-size: 18px;
+    }
+    .visual .swiper-slide-text-text {
+        font-size: 1.6vw;
+    }
 }
 @media all and (max-width: 760px) {
+    .visual_left_content > a > div > img {
+        width: 60px;
+    }
     .visual_timetable_date {
         font-size: 16px;
         color: #fff;
@@ -197,13 +338,26 @@ td > br{
         vertical-align: middle;
         padding: 10px;
     }
-    .visual_timetable_table th {
-        font-size: 18px;
-        font-weight: 700;
-    }
     .visual_timetable_table th,
     .visual_timetable_table td {
         font-size: 13px;
+    }
+    .visual_timetable_table th {
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .visual_bar .inner {
+        justify-content: center;
+        align-items: center;
+    }
+    .visual_bar_content > li > a > img {
+        width: 30px;
+    }
+    .visual_bar_number {
+        display: none;
+    }
+    .visual .swiper-slide-text-text {
+        font-size: 2vw;
     }
 }
 @media all and (max-width: 700px) {
@@ -223,6 +377,10 @@ td > br{
         font-size: 12px;
         font-weight: 700;
     }
+    .visual_timetable_table th {
+        font-size: 16px;
+        font-weight: 700;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -239,6 +397,19 @@ td > br{
     .visual_left_content > a > div > img {
         width: 50px;
     }
+    .visual_timetable_table th {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .visual_bar_content > li > a > img {
+        width: 27px;
+    }
+    .visual_bar_text {
+        font-size: 12px;
+    }
+    .visual .swiper-slide-text-text {
+        font-size: 2.2vw;
+    }
 }
 @media screen and (max-width: 390px){
     .visual_timetable_table th,
@@ -250,5 +421,9 @@ td > br{
     .visual_timetable_date {
         font-size: 16px;
         padding-left: 20px;
+    }
+    .visual_timetable_table th {
+        font-size: 14px;
+        font-weight: 700;
     }
 }
