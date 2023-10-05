@@ -1,6 +1,5 @@
 window.addEventListener("load", function () {
   var swiper = new Swiper(".visual_swiper", {
-    autoHeight: true,
     autoplay: {
         delay: 3000,
     },
