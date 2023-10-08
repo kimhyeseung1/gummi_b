@@ -151,7 +151,7 @@
 }
 .visual_left_content > a {
     width: 100%;
-    padding: 15% 0;
+    padding: 80px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,6 +231,9 @@
 .visual_timetable_table {
     width: 100%;
     text-align: center;
+}
+.visual_timetable_table tr:nth-child(2n) {
+    background-color: #f4f4f4;
 }
 .visual_timetable_table th, td {
     height: 50px;
