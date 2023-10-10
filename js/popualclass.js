@@ -1,11 +1,7 @@
 $(document).ready(function() {
-  // Assign some jquery elements we'll need
   var $swiper = $(".swiper-container");
-  var $bottomSlide = null; // Slide whose content gets 'extracted' and placed
-  // into a fixed position for animation purposes
-  var $bottomSlideContent = null; // Slide content that gets passed between the
-  // panning slide stack and the position 'behind'
-  // the stack, needed for correct animation style
+  var $bottomSlide = null;
+  var $bottomSlideContent = null;
 
   var mySwiper = new Swiper(".popualclass .swiper-container", {
     spaceBetween: 1,
@@ -34,12 +30,20 @@ $(document).ready(function() {
       },
       1920: {
         spaceBetween: 1,
-        slidesPerView:3,
+        slidesPerView: 3,
       }
     
     }
   });
-  
-});
 
+  // 마우스 오버 시 슬라이드 일시 정지
+  $swiper.on('mouseenter', function() {
+    mySwiper.autoplay.stop();
+  });
+
+  // 마우스 아웃 시 슬라이드 다시 재생
+  $swiper.on('mouseleave', function() {
+    mySwiper.autoplay.start();
+  });
+});
 
