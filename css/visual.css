@@ -151,13 +151,37 @@
 }
 .visual_left_content > a {
     width: 100%;
-    padding: 15% 0;
+    padding: 80px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 .visual_left_content > a > div > span {
+    display: block;
+    padding: 15px 0 0 0;
+    font-weight: 700;
+    color: #f0f0f0;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+.visual_left_content_login {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.visual_left_content_login > a {
+    width: 100%;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.visual_left_content_login > a > div > span {
     display: block;
     padding: 15px 0 0 0;
     font-weight: 700;
@@ -232,6 +256,9 @@
     width: 100%;
     text-align: center;
 }
+.visual_timetable_table tr:nth-child(2n) {
+    background-color: #f4f4f4;
+}
 .visual_timetable_table th, td {
     height: 50px;
     font-size: 15px;
@@ -258,7 +285,7 @@
     color: #a47fbc;
 }
 .login_before {
-    height: 250px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
